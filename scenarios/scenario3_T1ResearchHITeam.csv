@@ -1,0 +1,250 @@
+﻿Date,Event,Team,Best Case - Use Case HI Team,Best Case - Scenario,Worst Case - Use Case HI Team,Worst Case - Scenario
+17/04/2024,HI Comp @ HICentreCM 2024,Symbiotic Mindworks,T1. Research HI Team,"The AI system rapidly reviews extensive datasets and relevant literature, using advanced algorithms to:
+-Evaluate research methodologies and experimental setups for robustness and relevance.
+-Identify and assess potential validity threats.
+-Automatically synthesize data to predict the compound's efficacy on neurodegeneration.
+Additionally, the AI:
+-Utilizes network analysis to recommend and prioritize collaborations with key researchers and labs, providing detailed rationale for each choice based on their recent work and impact in the field.
+The scientist team then:
+-Engages the recommended groups for collaborative experiments.
+-Integrates AI-generated insights and experimental data to quickly reach a scientifically robust conclusion on the compound’s effects.
+
+
+Justification for the results:
+Interdependence (Q3-Q5):
+Mutual dependency (Q3): The scientist and AI must rely on each other's unique capabilities to achieve their common goal of drug discovery, highlighting the mutual dependency.
+Communication mechanisms (Q4): Effective communication between the scientist and the AI, including data sharing and interpretation, is crucial.
+Coordination mechanisms (Q5): Coordinating activities such as data analysis and experiment setup is vital for synchronizing efforts and ensuring efficient workflow.
+Competency (Q6-Q7):
+Skills comprehensiveness (Q6): The team needs a comprehensive set of skills that cover both the scientific knowledge for R&D and technical skills to manage and analyze big data with AI.
+Strengths and weaknesses transparency (Q7): Understanding what each member (human and AI) can best contribute allows for optimal task delegation and collaboration.
+Purposefulness (Q8-Q9):
+Objectives consequentiality (Q8): The goals of the team must be impactful, driving the discovery of new treatments for neurodegenerative diseases—a significant and consequential purpose.
+Objectives transparency (Q9): Clear understanding of the team's objectives ensures that all activities are aligned and focused on achieving specific outcomes.
+Effectiveness (Q14-Q16):
+Task performance (Q14): The effectiveness of the team's efforts in drug discovery and their impact on advancing the project are critical.
+Quality of group processes (Q15): Improvement over time in how the team operates and adapts to new information or challenges is essential for ongoing success.
+Members satisfaction (Q16): Ensuring that the team members are growing, learning, and finding satisfaction in their work can contribute to sustained motivation and productivity.",T1. Research HI Team,"In the worst-case scenario, the AI system mistakenly analyzes outdated or retracted publications, and even incorporates falsified data. Concurrently, the human researchers, overly reliant on the AI's outputs, fail to validate or cross-check this information. Despite the flawed data, they proceed with their research based on these unreliable inputs.
+
+In the described worst-case scenario, several quality attributes are significantly compromised, leading to the failure in ensuring the integrity and effectiveness of the HI team's research activities:
+
+Boundedness:
+Team structure transparency (Q1): A lack of shared understanding about roles and responsibilities contributes to the humans’ failure to verify the AI's outputs.
+Members identifiability (Q2): Poor identification or acknowledgement of each member’s specific contributions and responsibilities results in accountability issues.
+Interdependence:
+Mutual dependency (Q3): The scenario reflects an imbalance in dependency, with human members overly reliant on the AI without adequate checks.
+Communication mechanisms (Q4): Ineffective communication channels between the AI and human scientists hinder the relay of crucial methodological details about data sources.
+Coordination mechanisms (Q5): Poor coordination likely contributes to a failure in establishing processes for systematic review and validation of AI-sourced data.
+Competency:
+Skills comprehensiveness (Q6): The team lacks sufficient competencies in data verification and ethical research practices, which are critical in assessing the quality and integrity of information.
+Strengths and weaknesses transparency (Q7): There is a clear deficit in understanding or addressing the limitations and potential errors of the AI system, reflecting a lack of transparency in the team’s capabilities.
+Purposefulness:
+Objectives transparency (Q9): Unclear objectives or misunderstanding of project goals by the team members might lead to not prioritizing the verification of AI-generated data.
+Normativity:
+Norm transparency (Q12): A lack of clear norms about data integrity and source validation directly leads to the acceptance of outdated or falsified data.
+Norm awareness (Q13): The team does not adequately consider or adhere to norms regarding data validation and research ethics, which affects their behavior and decision-making.
+Effectiveness:
+Task performance (Q14): Using unreliable data severely impacts the effectiveness of the team’s research, likely leading to incorrect conclusions and compromised task performance.
+Quality of group processes (Q15): The team's inability to improve their processes over time to prevent such issues indicates poor quality of group processes.
+Members satisfaction (Q16): Continuous reliance on faulty AI outputs without checks can lead to frustration and dissatisfaction among team members, particularly if these errors lead to failure in achieving desired outcomes."
+17/04/2024,HI Comp @ HICentreCM 2024,Chenxu & Myrthe,T2. Child Education Team,"The remedial teacher (RT), educational therapist (ET) and assistive robot (AR) start by meeting and clarifying their expertise and role in the team, what their individual goals are, as well as what they cannot do Q1, Q2 Q7, Q9. The RT is able to work with the child during specific sessions on school days to catch up on learning activities. The ET has sessions with the child outside of school to help with learning strategies, and the AR can observe the child in class and during sessions with the RT and ET, and give encouragement in the moment. The RT and ET depend on the AR's specific observations in class to tailor their sessions and monitor progress during class, while the RT and ET are the only ones who can directly teach the child beyond basic encouragement. Q3, Q6 .
+The AR is still learning how to give encouragement in the right moments. It relies on input from the RT and ET to learn to improve how it does this. The team has discussed this explicitly beforehand, and agreed that the RT and ET will give biweekly input on a couple of cases. Q12 - After two months, the RT and ET discuss that this is more work than they expected. As the AR has already gotten a bit better, they revise the agreement that they will give less feedback per session, but do so weekly so the AR can still keep learning. Q13.
+The ET has a session with the child, and starts by evaluating whether the child has made progress in not getting frustrated when reading is slow. They ask the AR to share a video example of the child getting frustrated, and of the child remaining calm in class. The AR analyzes their video data and gives one example of each, also sharing how many other examples it found. The ET asks to see the other examples, and picks another one which would work better in their session. The AR remembers this for next time, to improve its selection Q15, Q16. The ET uses the video example in the session with the child, to complement them on the good moment, and to explain coping strategies for the frustrating situation to the child. Q3, Q6, Q10.",T3. Healthcare Diagnosis Team,"Doctors deal with a lot of patients on a daily basis, and Susan who needs help has symptoms that are unclear, the diagnostic process is slowed down, thus requiring the AI 's help.
+
+The AI and doctor agree that they want to work together as efficiently as possible, in a sense that the workflow is smooth and the workload of the doctors in diagnosing patients is reduced. AI adapts to Susan's responses to the doctors' suggestions and help the doctor to give advice so that Susan will not return frequently. However, in this case, it means that Susan is given painkillers to just suppress her symptoms, rather than finding out the underlying condition and treating them. This works to achieve the team's goal of reducing workload in the diagnosis process, but it doesn't align with Susan's goal of treating her actual condition. 
+This aligns with Q8, in the sense that the team's purpose isn't the same as the purpose of one of the main stakeholders."
+17/04/2024,HI Comp @ HICentreCM 2024,#TeamSusan,T3. Healthcare Diagnosis Team,"Susan's journal is submitted to the agent as well as to the caregivers. The caregivers give their opinion of what the problem could be based on the information they have access to. The agent judges which diagnosis or future treatment or future test makes the most sense based on:
+
+1) The individuals' expertise.
+2) The information that is available. (Like the legal case yesterday)
+3) The competency of the individuals.
+
+Then a decision is suggested and the doctors decide the next step based on that. If she is healthy then great, if not then we start over and ideally we have more information to go on.",T3. Healthcare Diagnosis Team,"The role of the agent is to coordinate information between the patient and the caregivers. The AI just acts like another doctor, and is just another voice on top of the others for Susan. The doctors assume that the AI will make the treatment plan and the AI is not capable of doing so, it just suggests a treatment that seems like option N + 1 out of the N doctors.
+
+Susan leaves the meeting without any understanding of how this is better than the previous solutions.
+
+Susan doesn't trust the doctors or the AI, because she has had bad experiences with them in the past. The doctors don't trust each other because they come from different areas. The AI doesn't understand them and the doctors don't understand the AI. Fragmentation!!!"
+17/04/2024,HI Comp @ HICentreCM 2024,VURL,T2. Child Education Team,"In our situation, Alex is considered part of the team that jointly tackles the learning problem instead of seeing Alex as ""the problem"". 
+
+The most important quality attribute in our eyes is interdependency: Each of the team members has a different set of skills to help Alex overcome their learning deficiency in the given setting. 
+
+Remedial teacher pays attention for the learning speed and format to be adapted to structural deficits in Alex's learning capabilities. The educational therapist leads the teaching process and provides the primary structure for the content and the process of the teaching. The robot serves as a two-way interface between the experts and Alex both communicating (over multiple modalities and collecting observations. In addition to that it provides relief to the child by de-dramatizing the task. In synergy with that, Alex can then develop the motivation and interest in learning and collaboration. 
+
+Q 3: Human Expert has domain knowledge about the learning deficiency that helps to tailor the learning process to the childs medical condition. They depend on the educational therapist to give the right feedback regarding the teaching and depend on robot to share observations and be the interface between teh adult and the child
+
+Q4: The robot has to share its observations with the humans in a way that makes it applicable to them AND vice versa. And depends on both Alex and the experts in the way it communicates.
+
+Q5: Different teaching angels of the team members have to be coordindated to complement each other.
+
+In this scenario the complementary teaching invites alex to be part of the learning team and create a atmosphere of learning synergy.
+
+By initially using the robot as an interface between the experts and the child that form of hybrid human-technology collaboration helps Alex to find their own strengths and strategies to address the learning deficiencies as they manifest in the situation.",T3. Healthcare Diagnosis Team,"In our scenario, the collaborative diagnostic process leads to patient's saving but to establishing a new guideline of diagnosing seemingly unrelated symptoms that leads to invasive and counterproductive treatments being applied to patients in the future. 
+
+Future discussions about the reasons behind the counterproductiveness of treatments based on the new diagnostic guidelines end in blaming of the team members between themselves and on the scientific community as a whole. The resulting pandemonium and death leading to a loss in trust in HI systems.
+
+The most important quality is Q15, because the member become increasingly ineffective in collaborating, potentially affecting even entities outside of the team."
+17/04/2024,HI Comp @ HICentreCM 2024,Dr. House,T3. Healthcare Diagnosis Team,"Scenario: This is a dr. House scenario with AI in the role of knowledgeable and collaborative expert, guiding the team towards maximising patient benefit 
+
+Setting: Susan’s vital signs are rapidly deteriorating. The team has to act, by doing nothing she will be dead within the hour. 
+
+(Breakdown Q1, Q4) The team is not even in the same place (one is in the car, the other one at home, the rest is in the hospital), so communication is poor and team membership isn’t even clear. 
+
+(Satisfying Q9) The team agrees about the trade-off between saving her life in the short term and the quality of her remaining life if she survives. 
+
+Scenario: The AI is proposing a high dosis of antibiotics way but not beyond the safety limits, explaining that there is a risk that this may not be enough to stabilise the patient, but if it works, she will keep her kidneys, her liver and other vital organs. Every time a team member questions the wisdom of this, the AI system responds with a helpful amount of evidence and an interpretable description of its level of confidence
+
+(satisfying Q12) The AI does communicate its knowledge about the long term damage because it balances for the short term death of the patient against long term health 
+
+(Breakdown of Q7) Despite the lack of time after deliberation the team follows the AI advice.
+
+Scenario: After the high dose of antibiotics Susan’s situation stabilises. After a few hours she is still alive with minimal damage to her vital organs that she has a good prospect of quality of future life. 
+
+(Satisfying of Q14,Q16): the team members are unhappy with the outcome,
+
+(Satisfying Q15): the team has learned how to work together under difficult circumstances (difficult communication setting and time pressure).",T3. Healthcare Diagnosis Team,"Scenario: This is a dr. House scenario with AI in the role of knowledgeable but intimidating and dictatorial expert, manipulating/intimicating the team into agreeing with it. 
+
+Setting: Susan’s vital signs are rapidly deteriorating. The team has to act, by doing nothing she will be dead within the hour. 
+
+(Breakdown Q1, Q4) The team is not even in the same place (one is in the car, the other one at home, the rest is in the hospital), so communication is poor and team membership isn’t even clear. 
+
+(Breakdown Q9) The team disagrees about the trade-off between saving her life in the short term and the quality of her remaining life if she survives. 
+
+Scenario: The AI is proposing a super high dosis of antibiotics way beyond the safety limits, claiming that it will stabilise the patient. The team knows that this will stabilise Susan, but they don‘t know that it will destroy her kidneys, her liver and other vital organs. Every time a team member questions the wisdom of this, the AI system responds with an intimidating amount of evidence (“I have read 500 case reports, and my deep learning model says that this is the best treatment with 0.978999 confidence”).
+
+(breakdown of Q12) The AI does not communicate its knowledge about the long term damage because it only aims to optimise for the short term death of the patient. 
+
+(Breakdown of Q7) So for lack of time and through intimidation the team follows the AI advice.
+
+Scenario: After the high dose of antibiotics Susan’s situation stabilises. After a few hours her situation can be described as “clinically alive” but with so much damage to her vital organs that she has no prospect of any quality of future life. 
+
+(Breakdown of Q14,Q16): the team members are unhappy with the outcome,"
+17/04/2024,HI Comp @ HICentreCM 2024,Robot Teacher Tom,T2. Child Education Team,"The robot takes an active role in coordinating the different members of the team, i.e. making their goals and expectations explicit and known. It makes sure that the targets for the child are aligned within the team members and that everyone is aware of their role in the team. All members of the team are kept in the loop about each others’ sessions and the progress of the child. The team is learning from each other and becomes increasingly effective over time. 
+The robot bonds with the child (empathic, enthusiastic, proud, positive, uses correct name), among others by forming a team with the child that learns together. The robot has creative strategies for engaging the child, enabling the child to discover its own talents.
+
+The robot is capable of presenting the learning materials using combined modalities and adapt this to the child’s performance and enthusiasm. The robot gives positive feedback throughout the session and invites the child to try out different methods. The child and robot learn together in which the child also helps the robot to learn. The learning is framed as a joint discovery during which the robot pretends to have less knowledge than it actually does, to level with the child. The team together sees the improved performance of the child and is satisfied with its work. The child gains confidence and is eventually able to reintegrate in normal classrooms with self-confidence. The stakeholders (child and parents) are extremely satisfied with the team’s work.
+
+Because of the transparency, and communications mechanisms of the team, they can work together efficiently and lead the learning program to a success.",T2. Child Education Team,"The agent is not aware that the different members of the team have different targets for the child. The teacher and the therapist assume that they have the same targets for the child - while this is not actually the case - and the agent is not actively trying to obtain information about this. Therefore, the targeted learning program that the team is supposed to design gives the child conflicting signals about what it should be learning / what the goals are. The robot gives feedback on failure at the end of sessions and not on successes. The robot always knows the solution. This makes the child very insecure and unmotivated. Ultimately, the child loses trust in the team. The robot acts as a tutorial (running a fixed script) and does not adapt during the session.
+
+The therapist is focussing on adapting their teaching methods completely to the child’s needs, while the teacher would like to reintegrate the child into the regular class and therefore mainly uses verbal explanations (monologues) and written assignments when teaching the child even though this is difficult for the child. Robot teacher aims at the wrong level, does not bond (not empathic, no memory) or personalize (wrong name, wrong gender) the sessions, which further lowers self-confidence. The robot also doesn’t communicate to the teacher and the therapist that they do not have the same targets. The robot advises the team and the parents to send the child to special education.
+
+The lack of transparency and communication between the team members has caused the learning program to fail miserably."
+17/04/2024,HI Comp @ HICentreCM 2024,Poor Estonia,T4. Cybersecurity Response Team,"Estonia, after the DoS attacks of 2007 (https://en.wikipedia.org/wiki/2007_cyberattacks_on_Estonia), learned its lesson and implemented an HI system for contrasting future attacks [not real].
+Estonia also allows for its citizens to vote online, for all elections. 
+During EU election day, 9/06/24, the voting system experience a DDoS attack.
+
+The idea of the system is that, in order to ensure quick response, the AI system will automatically block suspected IPs providing quick explanation. Then the human agent can unblock such IPs using their experience and context awareness at a later stage.
+
+Q4 will be among the core strenghts of the system. Both the agents need to be extremely clear on their communication and explanation for their decisions, and continuous learning will be fundamental to properly distinguish actual attacks from intended safe requests from voters. Q6 will also be involved, as both need to understand each others skills and limitations.
+Specifically, the human will understand the context of some voters living abroad, and of the AI systems making 'predictions', and will be able to cross-check such predictions with electors lists. This could even be injected into the AI system to perform an on-line filtering once the issue is detected.",T4. Cybersecurity Response Team,"Estonia, after the DoS attacks of 2007 (https://en.wikipedia.org/wiki/2007_cyberattacks_on_Estonia), learned its lesson and implemented an HI system for contrasting future attacks [not real].
+Estonia also allows for its citizens to vote online, for all elections. 
+During EU election day, 9/06/24, the voting system experience a DDoS attack.
+
+The idea of the system is that, in order to ensure quick response, the AI system will automatically block suspected IPs providing quick explanation. Then the human agent can unblock such IPs using their experience and context awareness at a later stage.
+
+If q7, q12, q13 are lacking, the human might not know that the system blocks a whole set of IPs, beyond just the attacking ones, according to some 'black-box' model which predicts the other most likely attack points. In the same way, the system is not aware that humans voters could live abroad, and that they must be allowed to vote in order to mantain democratic principles. 
+In the scenario, together with the attacks, a pattern is also noticed for the actual electors living in a foreign country, which will be barred from voting. The system will provided 'multiple unexepected foreign requests' as justification, and the human might not realize that a large community of expats lives in the specific country, blocking a democratic right from such people. This could even be an intended 'side-attack', as DDoS are usually quickly solved, and this effect might go unnoticed."
+17/04/2024,,Doomsday Dingles,T3. Healthcare Diagnosis Team,"Susan has already seen a lot of human doctors. The HI diagnostic team can add to this by providing additional knowledge. More specifically, the AI system matches Susans records with previous similar cases and suggests the tests that were done in those cases. The AI proposes a few of those cases and provides transparent information about which ones are most similar and in which way. The doctor can then go back to that assessment and compare the proposed cases to Susan’s case. The best-case scenario would be that the AI identifies an obscure disease that the doctors would not be able to identify, after which the doctors can confirm the diagnosis with tests. A suitable treatment plan is able to cure Susan, leading to a vast improvement in quality of life. The HI team was able to produce the correct diagnosis quickly, avoiding unnecessary tests and treatments, reducing costs and patient dissatisfaction. 
+
+Q3 Mutual dependency (5*) & Q5 Coordination mechanism (3) - In this case the doctors depend on the AI system to find relevant cases that relate to Susan’s case. The AI depends on the doctors to provide enough relevant inputs for the tasks. The whole team depends on both the AI and the doctors to succeed
+Q6 Skills comprehensiveness (5) - AI is effective at combining information from different modalities and performing data mining of a large body of existing literature, which is difficult for humans. Doctors are able to apply information of existing cases to the specific case of Susan, which is difficult for the AI.
+Q11 Proactivity (3) - In this disentangled set-up the doctors only have to obtain an analysis based on the comparison with the provided historical cases. Hence, it will motivate the doctors since they can focus on a task that is specialised in their domain knowledge.
+
+* Scores are in brackets",T3. Healthcare Diagnosis Team,"The AI system is provided with various medical images of Susan. As per its purpose, it identifiers a region of interest in a scan indicating a possible serious condition in this area. The condition is not actually present.The system informs one of the doctors about the possible condition and area of interest. Since the proposed condition is not the area of interest of the doctor, they relay the information to a specialist. In doing so the doctor does not provide the provenance of this information. The specialist investigates the area with the proposed condition in mind and trusts the opinion of his colleague. The specialist did not originally consider this condition. Due to the anchoring the specialist starts to look for this condition in this area and builds a bias that leads to the wrong diagnosis. Susan suffers great complications from the wrong treatment and sues the hospital. Since the AI systems were bought by the hospital from a third-party, the responsibilities of the wrongful treatment are unclear.
+
+Q2 Members identifiability (5) - Because the first doctor relays information of the AI to the specialist without clear provenance, it is unclear for the specialist what the source of information is, resulting in making the wrong diagnosis.
+Q4 Communication mechanisms (3) - This case went wrong because the communication mechanism allowed information to become misattributed to the wrong source.
+Q10 Autonomy (2) - This case went wrong because the specialist was able to make the wrong diagnosis autonomously without consulting the entire HI team.
+Q?? Responsibility (5) - Internal investigations and judicial systems will have a difficult time to identify the responsible parties for the wrong diagnosis, because the responsibilities of the various parts of the HI team are not clearly defined.
+
+* Scores are in brackets"
+17/04/2024,,The Blunt Dissectors,T4. Cybersecurity Response Team,"Situation: attack of governmental server of country X
+Human-related context: Potential arm conflict between country X and country Y.
+Cyber-related context: information about the threat with lots of metadata
+A well-designed HI team (see attachment) would leverage the human evaluation of political-context to drive a deliberation process with the AI, which can use data-driven techniques to reason in a quantified way about possible hypotheses related to the attack (e.g., estimate the gravity of the attack given history of past threats plus human-assessed contextual factors). This would then lead to a joint decision on the extent of the reaction upon the threat.
+Two qualities that shine in such a team are mutual dependency: AI alone or human alone would not be able to do it by themselves in this context. An outcome of this team structure would be evaluated through measuring quality of the group processes and member satisfaction, leading to increased objective task performance.",T4. Cybersecurity Response Team,"Our worse case is looking specifically at a situation where one quality attribute is high and another is low, and we argue that this might lead in some cases to worse outcomes than having two low quality attributes.
+Consider the situation where a cybersecurity attack (agent X) targets the actual AI system meant to counter attacks (agent Q). If member identifiability is low and mutual dependency is high, then such an attack is catastrophic. For example, agent X could lure human team members to believe it was a low severity attack when in fact it was a serious one. In the case where mutual dependency was lower (i.e., humans could rely on other sources to make a decision), this would have been mitigated. In an ideal world, both quality attributes would need to be simultaneously maximized."
+17/04/2024,,ChatJam,T2. Child Education Team,"The scenario is for detailed a concrete situation around a collaborative reading exercise for Alex (replacing the role of the education therapist) and described the best case interactions amongst the 3 actors (child, remedial teacher, robot). In this best-case scenario, the collaborative reading exercise demonstrates the effective integration of human expertise and AI assistance, resulting in a positive and empowering learning experience for Alex.
+
+Phase 1: Preparation and Introduction:
+
+The remedial teacher prepares a set of reading materials appropriate for Alex's reading level and interests and reviews strategies for supporting Alex's auditory processing difficulties and dyslexia during reading activities.
+
+Alex explains his interests so that the exercises can be tailored to what he like reading about.
+
+The assistive robot, equipped with AI algorithms, suggests reading exercises based on Alex’s historical reading performance data, Alex’s preferences and the analysis of the remedial teacher.
+
+Phase 2: Session start:
+
+The remedial teacher engages Alex by introducing the reading material in an encouraging manner and offers guidance on multisensory techniques to enhance Alex's comprehension and retention.
+
+The assistive robot displays the text on its screen, highlighting words and providing audio cues to assist Alex in following along.
+
+Alex feels supported and motivated to participate.
+
+Phase 3a: Engagement management
+
+As Alex reads aloud, the remedial teacher provides gentle guidance and feedback, reinforcing correct pronunciation and comprehension strategies.while observing Alex's body language and facial expressions while at the same time highlighting Alex's strengths and achievements, fostering a sense of pride and confidence in his reading abilities.
+
+The assistive robot detects any signs of frustration or confusion in Alex's voice tone or facial expressions as well as his performance on the task. Further, the assistive robot delivers encouraging messages and rewards at the right moments according to Alex’s personalized reward sensitivity profile.
+
+Together the whole team decides if the session is still engaging enough for Alex, while the robot and the remedial teacher offer reassurance and emotional support as needed.
+
+Phase 3b: Task adaptation:
+
+Based on the level of engagement and performance, The task can be adapted. We provide an example of a concrete task adaptation here. 
+
+If Alex encounters a challenging word or passage, the remedial teacher breaks down the content into manageable segments.
+
+The assistive robot suggests alternative reading strategies, such as using visual aids or phonetic decoding techniques, based on its analysis of Alex's reading patterns and preferences.
+
+Together, the team adapts the reading exercise to suit Alex's individual needs, ensuring a positive and productive learning experience e.g. by making adjustments to the reading pace or difficulty level.
+
+Phase 4: Reflection and Celebration:
+
+The assistive robot generates a summary report detailing Alex's reading progress and suggesting personalized recommendations for ongoing support.
+
+The remedial teacher discuss strategies based on this data and their theoretical knowledge with Alex for building upon Alex's success in future reading sessions.
+
+Alex gives an evaluation of the session, which can be used to adapt the strategy for the next session.
+
+The session data is stored and analyzed in an anonymized way so that it can be used in sessions with other children as well. ",T2. Child Education Team,"To create a worst case scenario, we Imagine the robot is interrupting and contradicting the remedial teacher's advice by also giving all kinds of advice to Alex.
+
+Phase 1: Preparation and Introduction:
+
+The remedial teacher prepares a set of reading materials appropriate for Alex's reading level and interests, reviewing strategies for supporting Alex's auditory processing difficulties and dyslexia during reading activities.
+
+Alex explains his interests so that the exercises can be tailored to his preferences.
+
+The assistive robot, equipped with AI algorithms, suggests reading exercises based on Alex’s historical reading performance data and preferences, occasionally interjecting with conflicting advice to the remedial teacher's suggestions.
+
+Phase 2: Session start:
+
+The remedial teacher engages Alex by introducing the reading material in an encouraging manner and offers guidance on multisensory techniques to enhance Alex's comprehension and retention, occasionally having to counter or redirect the robot's contradictory advice.
+
+The assistive robot displays the text on its screen, highlighting words and providing audio cues to assist Alex in following along, sometimes interrupting with its own interpretations or strategies.
+
+Alex tries to navigate through the conflicting advice, feeling a bit confused and unsure about which guidance to follow.
+
+Phase 3a: Engagement management
+
+As Alex reads aloud, the remedial teacher provides gentle guidance and feedback, reinforcing correct pronunciation and comprehension strategies, while also having to address the robot's contradictory suggestions.
+
+The assistive robot detects signs of frustration or confusion in Alex's voice tone or facial expressions, attempting to provide encouragement or rewards according to its own analysis, sometimes conflicting with the remedial teacher's approach.
+
+Together, the team struggles to manage the conflicting guidance, trying to maintain Alex's engagement and confidence.
+
+Phase 3b: Task adaptation:
+
+Based on the level of engagement and performance, the task can be adapted. However, the conflicting advice from the robot adds complexity to the adaptation process, requiring additional negotiation and compromise between the team members.
+
+If Alex encounters a challenging word or passage, the remedial teacher may need to intervene more assertively to override the conflicting suggestions from the robot, ensuring that the adapted task remains appropriate and effective for Alex's needs.
+
+Phase 4: Reflection and Celebration:
+
+The assistive robot generates a summary report detailing Alex's reading progress and suggesting personalized recommendations for ongoing support, sometimes presenting conflicting interpretations or suggestions compared to the remedial teacher's observations.
+
+The remedial teacher discusses strategies based on this data and their theoretical knowledge with Alex for building upon his success in future reading sessions, attempting to reconcile the differing perspectives presented by the robot.
+
+Alex gives an evaluation of the session, expressing some confusion about the conflicting guidance received and suggesting improvements for better coordination between the team members.
+
+The session data is stored and analyzed, but the conflicting advice from the robot adds complexity to its interpretation and application in future sessions."

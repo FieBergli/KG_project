@@ -1,0 +1,190 @@
+﻿Date,Event,Team,Best Case - Use Case HI Team,Best Case - Scenario,Worst Case - Use Case HI Team,Worst Case - Scenario
+6/10/2024,HI Comp @ HHAI 2024,Doudou and Petter,T3. Healthcare Diagnosis Team,"In a best case scenario, we have a team consisting of medical professionals of disparate specialities that are all connected together with an AI search and analysis system which assists the team members in searching relevant databases for similar cases, as well as pointing out complexities and interactions between the different specialities of the medical professionals. For each medical professional, they will need to have a good idea both of the AI system and its limitations and capabilities, as well as an appreciation of the expertise of the other members (Q1, Q2, Q3, Q7). The patient (Susan) will be interacting primarily with a primary caregiver, who is specialized in patient communication, and trained in the use of the AI system, which extracts and categorizes the information from journals and previous tests in order to identify who are the best combination of specialists from the team to connect for further investigation. The AI system simultaneously scans through various medical databases for similar cases, correlating and comparing the Susan's symptoms, and giving the relevant references to the team of experts. 
+
+In the end, two experts who would not ordinarily have been connected except through the AI system are shown a relevant case in a different country that matches a subset of Susan's symptoms, and by making additional tests and inferences, they together manage to identify the specific disorder affecting her.",T3. Healthcare Diagnosis Team,"In a worst case scenario, we have a team consisting of medical professionals of disparate specialities that are all connected together with an AI search and analysis system which is intended to assist the team members in searching relevant databases for similar cases, as well as pointing out complexities and interactions between the different specialities of the medical professionals. The specialists are, however, not aware of each other's fields (lack of Q2), and each one think that their own speciality is the one with all the answers (lack of Q3), meaning that they tend to not share information (lack of Q5), ultimately leading to misdiagnoses and mismedication. In Susans case, this means that her symptoms are not recognized, and moreover that she is being passed around the various experts without any improvements, leading to a loss of trust and her illness progressing without treatment. Moreover if the uncertainty related to the AI system is not mastered and the team not trained for the utilization of the Ai medical system, it will, even when given relevant data, find unrelated cases that send experts on wild-goose chases that again lead to no improvement. 
+"
+6/10/2024,HI Comp @ HHAI 2024,HAI Enthusiasts,T2. Child Education Team,"The team, based at a planetary school, consists of a teacher (Marie), therapist (John), robot (MIKE) and the 12-year old child (Alex). Marie and John are designing a customised program collaboratively using case studies and literature reviews. The robot (MIKE) is very helpful in providing feedback from his interaction with Alex.
+
+MIKE plays different kinds of learning-based games, e.g. scramble, spatial recognition, flashcards, listening and speaking activities, and monitors the responses of Alex based on certain parameters such as speed, accuracy and willingness to respond.
+
+Marie and John have intensive brainstorm sessions to help design the learning program for Alex. Marie has developed some material for the task. John is reviewing MIKEâ€™s responses, based on his interactions with Alex. John was able to identify the strengths and weaknesses for Alex, and where more efforts need to be placed in terms of designing the curriculum. 
+
+The team is currently studying the solutions collaboratively with other similar teams in other countries. From the first iteration, Marie and John have re-trained MIKE with certain enhancements and MIKE is again having further educational sessions with Alex. It can be seen that gradually, Alex has started responding better in his assessments and is feeling more confident in his day-to-day life too. Alexâ€™s parents have stated that his speed, accuracy and willingness to respond in certain tasks has significantly improved. Marie and John, seeing this improvement, are very excited about these improvements and are motivated to continue working with MIKE.
+
+With the help of Marie and John, not only has MIKE changed Alexâ€™s life, but is now capable of helping other students with similar learning difficulties too.
+
+The team was a perfect blend of skills, bringing along with them the experience of teaching as well as insightful knowledge in this domain. The team members having a brainstorming session helped them identify each of the weaknesses and strengths, so that they can make the best out of it. 
+
+The objective of their work is very significant for Alex and for children facing similar issues as him. The team was aligned in their purpose and members worked together to achieve their goal, by having healthy discussions and taking into account feedback (e.g. from MIKE) as well as from international collaborators on this cutting-edge research.
+
+As we have seen here, Alex has shown a drastic improvement in his condition, so the work of the team has been very effective and satisfying for the user (Alex) as well as Alexâ€™s parents. This work is not only limited to Alex, but the learning of other children facing similar struggles too. With this healthy collaboration, the team is committed to continuous improvement over time.",T4. Cybersecurity Response Team,"A team of analysts at XYZCorp, an intelligence company based in Malmo, Sweden, who have recently developed an assistive AI agent which can generate alerts based on unusual network activities. The team has the following hierarchy:
+Peter: Junior Intelligence Analyst
+Sebastian: Senior Intelligence Analyst
+Ana: Software Engineer
+Martin: Team Lead
+Carolyn: Manager
+
+XYZCorp is a private organisation with several high profile clients, including the Swedish government. The role of the team is to monitor the network and report incidents accurately.
+
+Peter, who joined on the 10th May, 2024, has had a formal introduction to the rest of the team, but then Sebastian and Ana soon left for vacation, so there wasnâ€™t much time for sufficient interactions between members of the team. There was limited time for knowledge transfer sessions. Peter was provided with documents and links to go through and get back to the team for any questions, but then spent his initial two weeks completing mandatory onboarding training. Peter hasnâ€™t used the monitoring system, WireShield, before. Since he was new to the tool, he has just started exploring with the tool and started initially going through the documents. 
+
+It is 8th June, 2:00am - the day before the European general election. Peter is currently on call. Martin, the team lead, has told Peter that he can be contacted at any time in case of any issues. 
+
+Peter notices an alert generated by the WireShield that sends notifications based on unusual network activity. 
+
+Peter gets nervous, being the first time noticing such an incident. He calls the TL, but he doesnâ€™t pick up. Martin is unwell and is unable to respond.
+
+Peter drops an email to Martin, but after not getting a response after half an hour, calls his manager. Carolyn gets on a call quickly with Peter, but doesnâ€™t know how to resolve the issue.
+
+Eventually they can connect with the TL. Peter explains the situation - Martins responds that Sebastian has seen this before, but is unsure where the documentation is saved, so there hasnâ€™t been a proper handover between the team members in this situation. 
+
+They are gradually able to connect with Sebastian. he shares a link to the document from his mobile phone, but forgets that the document contains a series of steps, which include logging into the monitoring team WireShield with admin credentials, but unfortunately, Ana is the only one who has the admin details, stored in plaintext on her laptop in a .txt file. She doesnâ€™t have her laptop with her.
+The HI Team Qualities of boundedness, interdependence and normativity are lacking and are not up to a standard quality. If the team had a more structured process for knowledge sharing, and a checklist of only putting someone on-call when they have relevant knowledge, this wouldâ€™ve led to a better outcome in this scenario. Further, they couldâ€™ve had better norms for data storage, and strict regular check-ups for every task that team members did (e.g. second pair of eyes). "
+6/10/2024,HI Comp @ HHAI 2024,ItaFin,T2. Child Education Team,"In this scenario, each team member ( we give each of them a name for a specific scenario, a remedial teacher: Elisa, an educational therapist: James, and an assistive robot: Eva) has a specific role to play in collaboratively designing and implementing a targeted learning program for Alex. Here are qualities analysis for each role:
+
+Remedial Teacher (Alisa):
+Competency: The remedial teacher (Alisa) effectively identifies Alex's specific learning difficulties through comprehensive assessments. They pinpoint the exact nature and extent of Alex's auditory processing issues and dyslexia.
+Purposefulness& initiative: Alisa designs customized instructional strategies that cater to Alex's needs, such as using multi-sensory approaches to reading and incorporating visual aids to support auditory information processing.
+Purposefulness: Alisa consistently monitors Alex's progress, using formative assessments to adjust teaching methods and ensure that Alex is making measurable improvements.
+Emotion awareness: Alisa keeps Alex engaged and motivated through interactive and enjoyable learning activities, fostering a positive attitude towards learning.
+Interdependence&boundedness: Alisa effectively collaborates with the educational therapist and assistive robot, integrating their insights and recommendations into the instructional plan.
+
+Educational Therapist (James)
+Competency: James provides targeted therapeutic interventions that address Alex's learning difficulties. He employs techniques such as auditory training exercises and cognitive-behavioral strategies to improve Alex's processing abilities.
+Purposefulness: James works on developing Alex's executive functioning skills, such as attention, memory, and organization, which are crucial for overcoming learning challenges.
+Emotional Awareness: James offers emotional support and helps Alex build self-esteem and confidence in their learning abilities.
+Context awareness: James engage with Alex's family, providing them with strategies and resources to support learning at home.
+Interdependence: James collaborates closely with the remedial teacher and assistive robot, ensuring that therapeutic goals align with educational objectives.
+
+Assistive Robot (Eva):
+Competency: Eva collects real-time data on Alex's interactions and performance during learning activities. It analyzes patterns and identifies specific areas of difficulty.
+Purposefulness: Based on its observations, the robot provides personalized recommendations to the remedial teacher and educational therapist. For example, it might suggest adjusting the pace of instruction or using different types of learning materials.
+Initiative &effectiveness: Eva uses engaging and interactive tools to assist Alex with learning tasks, such as speech-to-text programs for writing assignments and interactive reading apps that highlight text and provide auditory feedback. Designing learning activity via games (Alexâ€™s satisfaction)
+Emotion awareness& sustainability: Eva offers consistent and patient support, allowing Alex to practice skills at their own pace without feeling pressured.
+Interdependence: It provides immediate and constructive feedback to Alex, reinforcing positive behaviors and guiding corrections in real-time.",T2. Child Education Team,"In the worst-case scenario, several factors can contribute to the failure of the targeted learning program for Alex. Here's a detailed breakdown of the worst-case scenarios for each role (the name of each role is the same as the best case):
+
+Remedial Teacher (Alisa)
+Competency (Inaccurate Assessment ): The remedial teacher fails to accurately identify Alex's specific learning difficulties, leading to inappropriate instructional strategies that do not address Alex's needs.
+Purposefulness (One-Size-Fits-All Approach): Instead of customizing the instruction, Alisa relies on generic teaching methods that do not cater to Alex's unique challenges, exacerbating Alex's learning difficulties.
+Initiative (Poor Monitoring) : Alisa neglects regular monitoring of Alex's progress, missing critical signs of struggle or improvement, and failing to adjust the teaching approach accordingly.
+Emotion&context awareness: Alisa is unable to engage Alex effectively, leading to a lack of motivation and a negative attitude towards learning.
+Interdependence: Alisa fails to collaborate effectively with the educational therapist and assistive robot, resulting in a disjointed and ineffective learning program.
+
+Educational Therapist (James)
+Competency &effectiveness (Ineffective Interventions): James uses inappropriate or ineffective therapeutic interventions that do not address Alex's specific needs, potentially worsening Alex's learning difficulties.
+Emotional awareness (Neglecting Emotional Support): James does not provide adequate emotional support, leading to low self-esteem and increased anxiety for Alex.
+Context awareness (Lack of Family Involvement): James does not engage with Alex's family, missing opportunities to support learning at home and to involve the family in Alex's progress.
+Interdependence (Poor Coordination): James works in isolation, not aligning therapeutic goals with educational objectives, resulting in a fragmented approach that confuses Alex.
+Purposefulness& initiative (Failure to Build Skills): James does not help Alex develop crucial skills like attention, memory, and organization, leaving these areas unaddressed and hindering overall progress.
+
+Assistive Robot (Eva)
+Implementation (Technical Issues): The assistive robot experiences technical malfunctions, providing inaccurate data or failing to interact effectively with Alex.
+Competency & initiative (Inappropriate Recommendations): Eva gives unsuitable recommendations based on faulty observations, leading to incorrect instructional adjustments that hinder Alex's progress.
+Boundedness (Over-Reliance on Technology): Alex becomes overly reliant on the robot, neglecting the human elements of teaching and therapy, which are crucial for Alex's development.
+Emotion awareness (Lack of Engagement): Eva fails to engage Alex properly, either through a lack of interactive tools or by not being user-friendly, resulting in Alex feeling frustrated or disengaged.
+Interdependence (Inconsistent Feedback): Eva provides inconsistent or unhelpful feedback, confusing Alex and failing to reinforce positive learning behaviors.
+
+"
+6/10/2024,HI Comp @ HHAI 2024,Ram & Hound,T3. Healthcare Diagnosis Team,"Our best-case involves a design that acknowedges the interconnected issues of Q12. Norm transparency, Q. 13 Norm awareness, Q1. Team Structure Transparency and Q7. Strengths & Weakness transparency.
+During her appointment, Susan is listened to and examinated by a human component of the team, who follows the unwritten rule of not interrupting eye contact by writing on a keyboard. The AI assistant is aware of this medical best practice and therefore acts complementarily, by writing down the salient aspects of the conversation for the doctor to revise and correct only at the end of the visit, adding the non-verbal and emotional content of the visit that the AI could not grasp (Q. 13 Norm awareness). Likewise, the doctor is aware of the norms that govern the functioning of the AI system (Q12. Norm transparency), after having been adequately lectured on its actual capabilities and weaknesses (Q7. Strengths & Weakness transparency), therefore establishing an appropriate level of reliance according to the case at hand and the â€œjagged technological frontierâ€ that governs the ever-evolving capabilities of AI systems (which can outperform humans in some task and be unpredictably disastrous at others). The awareness of either shared of differing norms between the AI functioning and the clinical diagnostics process leads to appropriate Q1. Team structure transparency: the AI is a complementary assistant to the medical doctor, rather than a peer.  
+By acknowledging the cooperative practices of clinicians dealing with complex cases (eg. Receiving a second opinion or advice over the correctness or incorrectness of their own hypothesis), system could be specifically designed according to (and accommodating) these unspoken practices, to be grasped for example through participatory design initiatives. This leaves to the doctor the first diagnostic decision as well as not disrupting the rich process of clinical visit. In case of uncertainty, the AI component of the team can be consulted just like in real-world practice, although with heightened caution about specific shortcomings inherent in systems trained by deep learning techniques. ",T3. Healthcare Diagnosis Team,"Our worst case scenario emerges as a consequence of a seemingly unproblematic level of concern with the quality attribute Q10. Autonomy, which impacts the dimensions of Q8. Objective Consequentiality and Q16. Member Satisfaction in the resulting chain of events.
+ 
+Susan, at her first appointment with the Healthcare Diagnosis Team, faces the AI component of the team, who collects her medical history and symptoms description. The AI system then provides the rest of the Healthcare Diagnosis Team its proposed diagnosis, complete with prognosis and treatment plan. The Healthcare Diagnosis Team learns about Susan from the AI-generated description and considers the proposed diagnosis, which they can confirm or ask the system to generate a new one. If the diagnosis is validated, the patient receives a push notification. This approach is the consequence of a hospital policy aimed at minimizing clinical diagnostic time and heighten efficiency, effectively multiplying tenfold the number of cases processed per day. This approach however lacks a sufficient protection of doctor Q10. Autonomy: while, as the hospital management assures to its patients, the doctors always revise the AI advice and can disagree with it, this does not take into consideration phenomena such as automation bias and anchoring bias, eventually resulting in deskilling or upskilling inhibition. This lack of autonomy leads in the medium- to long-term to a feeling of lack of Q8. Objective Consequentiality: the medical professional becomes a mere auditor of automated advice, rather than being engaged first-hand as the protagonist at the forefront of decision-making, an engaged and reflective professional. Likewise, in the stakeholder aspect of Objective Consequentiality, the increased distance between doctor and patient may result in heightened feelings of dissatisfaction and feeling misunderstood. The lack of objective consequentiality leads to what has been termed as â€œmeaningless workâ€. Clinical work already presents high level of burnout which are barely balanced by the high sense of personal fulfillment inherent in the doctor-patient relationship. This in turn causes low Q16. Member Satisfaction: the passive engagement resulting by AI-first diagnostic processes can stunt the growth of their medical intuition facing new cases. Case description does not convey the full spectrum of emotional, tactile, non-verbal and other hardly datafiable information which is clinically relevant.
+Given an AI system that displays what has been (controversially) termed â€œsuper-human accuracyâ€, it may very well be the case that it enhances the number of treated patients to a satisfactory degree of efficacy. However, being exposed to (fallible) AI diagnoses can lead to the anchoring bias of doctors (who may not be thinking â€œout-of-the-boxâ€ but simply in terms of agreeing/disagreeing with the automated advice), their automation bias (caused by either their over-reliance and excessive trust on AI, or by considerations of defensive medicine in avoiding malpractice claims if disagreeing with an eventually correct AI opinion). Especially for trainees, being exposed to automated advice from the get-go can impede their upskilling.
+"
+6/10/2024,HI Comp @ HHAI 2024,TeamBlue,T2. Child Education Team,"In the case of T2 the goal of the team is to collaborate together in order to
+develop a custom learning program and monitor Alex's progress. The best case
+scenario with respect to this goal is measurable improvements in Alex's
+capabilities, and that she builds rapport with her robotic team-mate. We
+consider specifically, that Alex is a primary school aged child. In this
+scenario the quality attribute of communication mechanisms, by using its
+observations from its interactions with Alex, the robot was able to
+conceptualize and implement playful learning methods and games, allowing Alex to
+engage with the program without being held down by her auditory and learning
+difficulties. This opened up novel communication channels, allowing Alex to
+interact with her tasks using combinations of pointing, gaze, dance and
+manipulation of objects and toys. This addresses a core need for why Alex
+required the interventions. There is also a strong reliance for communication
+between the assistive robot and the two human teachers, by establishing a communication
+channel the relevant observations made by the robot during the interactions with
+Alex can be properly conveyed to the teachers providing the essential information
+needed for them to tailor future learning sessions.
+
+An additional quality attribute which would ensure success in this particular task,
+is that of Norm Awareness. Within this group, at least two sets of group norms exist.
+The first between the human teachers and the assistive robot, the second between Alex
+and the rest of the team. While this distinction would be clear to the human teachers
+based on their training and prior experiences, it is essential that the assistive
+robot is also aware of the change in norms when interacting with Alex and its social
+capacities must be sufficient to adjust its behaviours while also trying to optimise
+the learning experience with Alex.
+
+The presence of the quality attribute of Members satisfaction, would greatly impact
+the long term success of this team collaboration. For all participants in the group,
+progress in Alex's learning goals would provide the positive feedback to all the members
+that they are engaged and contributing to the growth of the group, not only in terms
+of Alex's individual learning objectives, but through the joint observations of the interactions between Alex and the robot could broaden the perspectives of the teachers
+and contribute their abilities to work with children with learning disabilities. Alex's satisfaction with the robot interaction is also essential for maintaining engagement with her learning program. 
+",T2. Child Education Team,"Alex becomes completely disengaged with her learning activities and fails to
+make any appreciable progress and in some aspects demonstrates a regression from
+her initial level of competencies. There are multiple driving factors which
+relate to a lack of the required quality attributes.
+ 
+In the case that there is a lack of team structure transparency, the learning
+plans which are developed by the two teachers and are communicated to the robot
+may not be properly prioritised by the assistive robot this goes hand-in-hand
+with a lack of objectives transparency between the human teachers and the
+assistive robot, lead to under specification of Alex's learning objectives
+throughout the learning program. This results in a reduced effectiveness of the
+assistive robot to appropriately encourage Alex during her activities and a
+failure report the most relevant information to the human teachers which
+diminished their ability to modify the learning program appropriately.
+
+Not a lack, but an over emphasis on the degree of autonomy, could contribute to
+the breakdown in the success of the team. This is due to the complicated nature
+of Alex's learning disabilities, the required expertise for the preparation of
+her learning activities cannot be solved by any one member of the team. In
+particular in the case in which the assistive robot is the main interacting
+partner with Alex, it should not deviate widely from the established learning
+plan, without first consulting with the other teachers.
+
+A lack of norm awareness, could lead to poor interactions between the robot and
+Alex.  The expectations on the behaviours which the robot should express will
+need to be different when dealing with Alex, otherwise strong negative emotions
+may be associated with the robot. For example, if the responses of the robot is
+unfriendly, it emits harsh or loud noises or sudden flashing lights, this may
+cause a fear response in Alex which would reduce her willingness to engage with
+her team member.
+"
+6/10/2024,HI Comp @ HHAI 2024,HHAI team,T2. Child Education Team,".HI can help enhance the design on targeted learning solution for alex : How?
+
+
+Assuming Alex struggles with reading abilities and the HI teams designs a targeted learning  solution which helps to improve that.
+
+Skill comprehensiveness: AI ( the assistive robot) is trained on large data sets and has the
+ability to automatically the access the child from aspect like reading or writing and give
+observation, similarly the Human (remedial teacher and educational therapist )are able to
+diagnose Alex , monitor and evaluate his progress based on their human intelligence.
+
+
+Therefore there is a need for collaboration between both systems and from the effeciciency
+and accuracy aspect , wellbeing and ethical aspect.
+
+
+
+https://www.researchgate.net/publication/374002709_Enhancing_te
+aching_and_learning_for_pupils_with_dyslexia_A_comprehensive_re
+view_of_technological_and_non-technological_interventions/figures",T2. Child Education Team,"In a school in the centre of a large European city, Leah, a supportive teacher passionate about new technologies, and Anna, a therapist, are assigned to follow Alex, a child with learning problems. The intervention includes several interactive sessions with NAO, a humanoid robot frequently used in these types of interventions. The duration of the intervention is one semester, at the end of which there are no particular improvements and the guidelines provided by the team, applied in a sample of schools in the suburbs of the city, seem to be equally ineffective. What happened? 
+First of all, the adults of the team had problems to identify the specific roles of each one (Team structure transparency): both of them are pedagogical figures and Leah, feeling devalued by Annaâ€™s socially recognized role, began to take initiatives without thinking about the childâ€™s welfare. 
+In addition, Leahâ€™s passion for new technologies has led her to increasingly use NAO, leaving the child for a long time to interact with the robot. What she didnâ€™t think was that, although NAO has a rudimentary AI that allows him to respond reactively to stimuli, he follows the Wizard of Oz paradigm (Green & Wei-Haas, 1985). The robot, in the absence of a human being to coordinate its actions, will always end up repeating the same actions, limiting the effectiveness of the intervention (Skill comprehensiveness).
+On the other hand, Anna is not without fault: her expert position did not allow her to understand that Alex was also an active part of the team, and instead of orienting her interests she adopted a behaviourist approach (Wheldall & Merrett, 2013) and, in fact, trying to ""train"" the child without taking into account its autonomy (Autonomy).
+The presence of a child in the team is, in any case, a very important challenge, especially if with difficulties to process auditory information: for example, this will lead him to have more difficulty in introjecting the norms of educators and interact with Paro (Norm awareness).
+Last, we must consider the socio-economic factor: the intervention takes place in a specific context, which is that of a school in a wealthy area of the city. Since the intervention aims to help children with learning development, account should be taken of the fact that children raised in poor families show this type of problem most (Bigelow, 2006). An intervention designed for a particular social class is difficult to extend in a situation where the possibilities of families are limited and the effects on children more serious (Objectives consequentiality).
+"
+6/10/2024,HI Comp @ HHAI 2024,Sangeetha Ramanath,T2. Child Education Team,"Alex is the end user and the centre of this solution. The success of the team depends on the progress Alex makes (Q8) towards achieving the norm, the standard curriculum set for kids his age through seamless communication mechanisms (Q4). To do so, we must tackle the ""initiation(Q6) first and foremost; we need norm transparency and awareness (Q12â€“13) between all parties where the two human experts, teacher and therapist, work together to create a learning plan that can be periodically revisited based on the assessment and progress Alex makes. An assistive robot may help analyse this progress, create graphs of how far off Alex is from achieving his personalised goals, and point towards improvement. Simultaneously, in the initiation process, the robot assesses Alex's voice recordings and video of him playing with toys (using machine learning) and analyses what themes Alex is currently fascinated by. Last week, Alex was obsessed with monster trucks and Thomas trains, but this week, he loves reciting the colour of planets. The robot then rephrases all learning tasks with the themes of Alex's latest interest. (Instead of counting numbers, count planets or trucks instead.).
+
+After the initiation, all team members work in mini-autonomous (Q10) sections; for example, Alex starts to become more or less proactive (Q11), and the bot continues to change themes and engage Alex by trial and error. Meanwhile, the progress is continuously reported to the teacher and therapist. While the teacher may change the lesson plan, the educational therapist observes this interaction and proposes alternative methods that may be audio, visual, or sensory, deviating from traditional strategies.
+
+The teacher, therapist, and bot can perform a systematic task (Q14), celebrating moments of progress. Ultimately, the communication mechanisms must work to engage Alex and loop him into his own success. For example, every successful task completion leads to positive reinforcement through learning games and a visual graph of his progress (like how parents mark the heights of their kids on a designated wall).
+",T3. Healthcare Diagnosis Team,"This is TV Show House MD gone wrong, or in reverse. Combined with hypochondriac fear and obsessive anxiety regarding a random scratch or a mild sore throat, Susan self-diagnoses all her imagined symptoms into the system. She is proactive and transparent but not a high-quality judge of her conditions. She feels unsatisfied with all her reports by doctors and keeps jumping on for a second opinion. Healthcare professionals are perplexed. They schedule actual tests and lab reports on which they are dependent.  After failing to asses the conclusion, they then do not refer to other doctors in the field and close the case quickly. Susan does suffer from a certain illness that she never tested for and failed to realise as symptoms. This causes her problems to worsen and ultimately fail at treating her illness. She is also contagious and has a gene in her family line that makes her more susceptible. But because the system failed, her family was not aptly informed, and every 2nd or 3rd cousin of hers also has kids who experience the same fate. 
+"

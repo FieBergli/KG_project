@@ -1,0 +1,327 @@
+@prefix hi: <http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+#################################################################
+# TBOX EXTENSION
+#################################################################
+
+hi:ResearchPaper a owl:Class ;
+    rdfs:subClassOf schema:ScholarlyArticle ,
+        [ a owl:Restriction ;
+          owl:onProperty hi:relevantToScenario ;
+          owl:someValuesFrom hi:Scenario ] .
+
+hi:ScenarioVariant a owl:Class ;
+    rdfs:subClassOf hi:Scenario ,
+        [ a owl:Restriction ;
+          owl:onProperty hi:hasEthicalConsideration ;
+          owl:someValuesFrom hi:EthicalConsideration ] ,
+        [ a owl:Restriction ;
+          owl:onProperty hi:hasInteraction ;
+          owl:someValuesFrom hi:Interaction ] .
+
+hi:HealthcareDecisionScenario a owl:Class ;
+    rdfs:subClassOf hi:Scenario ,
+        [ a owl:Restriction ;
+          owl:onProperty hi:endgoal ;
+          owl:someValuesFrom hi:Endgoal ] ,
+        [ a owl:Restriction ;
+          owl:onProperty hi:hasInteraction ;
+          owl:someValuesFrom hi:Interaction ] .
+
+hi:EducationSupportScenario a owl:Class ;
+    rdfs:subClassOf hi:Scenario ,
+        [ a owl:Restriction ;
+          owl:onProperty hi:endgoal ;
+          owl:someValuesFrom hi:Endgoal ] ,
+        [ a owl:Restriction ;
+          owl:onProperty hi:hasInteraction ;
+          owl:someValuesFrom hi:Interaction ] .
+
+hi:ResearchCollaborationScenario a owl:Class ;
+    rdfs:subClassOf hi:Scenario ,
+        [ a owl:Restriction ;
+          owl:onProperty hi:endgoal ;
+          owl:someValuesFrom hi:Endgoal ] ,
+        [ a owl:Restriction ;
+          owl:onProperty hi:hasInteraction ;
+          owl:someValuesFrom hi:Interaction ] .
+
+hi:Patient a owl:Class ;
+    rdfs:subClassOf hi:Human .
+
+hi:MedicalProfessional a owl:Class ;
+    rdfs:subClassOf hi:Human .
+
+hi:RemedialTeacher a owl:Class ;
+    rdfs:subClassOf hi:Human .
+
+hi:EducationalTherapist a owl:Class ;
+    rdfs:subClassOf hi:Human .
+
+hi:ResearchScientist a owl:Class ;
+    rdfs:subClassOf hi:Human .
+
+hi:DecisionSupportSystem a owl:Class ;
+    rdfs:subClassOf hi:ArtificialAgent ,
+        [ a owl:Restriction ;
+          owl:onProperty hi:capability ;
+          owl:someValuesFrom hi:Capability ] ,
+        [ a owl:Restriction ;
+          owl:onProperty hi:processingInformation ;
+          owl:someValuesFrom hi:InformationProcessing ] .
+
+hi:AssistiveRobotSystem a owl:Class ;
+    rdfs:subClassOf hi:ArtificialAgent ,
+        [ a owl:Restriction ;
+          owl:onProperty hi:capability ;
+          owl:someValuesFrom hi:Capability ] .
+
+hi:LiteratureAnalysisSystem a owl:Class ;
+    rdfs:subClassOf hi:ArtificialAgent ,
+        [ a owl:Restriction ;
+          owl:onProperty hi:processingInformation ;
+          owl:someValuesFrom hi:InformationProcessing ] .
+
+hi:TrustState a owl:Class .
+hi:AutonomyLevel a owl:Class .
+hi:ExplanationPattern a owl:Class .
+
+[ a owl:AllDisjointClasses ;
+  owl:members ( hi:HealthcareDecisionScenario hi:EducationSupportScenario hi:ResearchCollaborationScenario ) ] .
+
+[ a owl:AllDisjointClasses ;
+  owl:members ( hi:Patient hi:MedicalProfessional hi:RemedialTeacher hi:EducationalTherapist hi:ResearchScientist ) ] .
+
+[ a owl:AllDisjointClasses ;
+  owl:members ( hi:DecisionSupportSystem hi:AssistiveRobotSystem hi:LiteratureAnalysisSystem ) ] .
+
+#################################################################
+# NEW OBJECT PROPERTIES
+#################################################################
+
+hi:relevantToScenario a owl:ObjectProperty ;
+    owl:inverseOf hi:supportedByPaper ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range hi:Scenario .
+
+hi:supportedByPaper a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:ResearchPaper .
+
+hi:hasScenarioVariant a owl:ObjectProperty ;
+    owl:inverseOf hi:variantOfScenario ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:ScenarioVariant .
+
+hi:variantOfScenario a owl:ObjectProperty ;
+    rdfs:domain hi:ScenarioVariant ;
+    rdfs:range hi:Scenario .
+
+hi:involvesActor a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Actor .
+
+hi:hasTrustState a owl:ObjectProperty ;
+    rdfs:range hi:TrustState .
+
+hi:hasAutonomyLevel a owl:ObjectProperty ;
+    rdfs:range hi:AutonomyLevel .
+
+hi:usesExplanationPattern a owl:ObjectProperty ;
+    rdfs:range hi:ExplanationPattern .
+
+hi:collaboratesWith a owl:SymmetricProperty , owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Actor .
+
+#################################################################
+# NEW DATA PROPERTIES
+#################################################################
+
+hi:paperTitle a owl:DatatypeProperty ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:string .
+
+hi:publicationYear a owl:DatatypeProperty ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:gYear .
+
+hi:doi a owl:DatatypeProperty ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:string .
+
+hi:scenarioNote a owl:DatatypeProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range xsd:string .
+
+#################################################################
+# CONTROLLED VOCABULARY INDIVIDUALS
+#################################################################
+
+# Trust states
+hi:CalibratedTrust a hi:TrustState ;
+    rdfs:label "calibrated trust" ;
+    skos:closeMatch <https://dbpedia.org/resource/Trust_(social_sciences)> .
+
+hi:UnderTrust a hi:TrustState ;
+    rdfs:label "under-trust" .
+
+hi:OverTrust a hi:TrustState ;
+    rdfs:label "over-trust" .
+
+# Autonomy levels
+hi:HumanLedAutonomy a hi:AutonomyLevel ;
+    rdfs:label "human-led autonomy" .
+
+hi:AILedAutonomy a hi:AutonomyLevel ;
+    rdfs:label "AI-led autonomy" .
+
+hi:DynamicAutonomy a hi:AutonomyLevel ;
+    rdfs:label "dynamic autonomy" ;
+    skos:closeMatch <https://dbpedia.org/resource/Autonomous_system> .
+
+# Explanation patterns
+hi:ProgressiveDisclosurePattern a hi:ExplanationPattern ;
+    rdfs:label "progressive disclosure" .
+
+hi:InteractiveExplanationPattern a hi:ExplanationPattern ;
+    rdfs:label "interactive explanation" ;
+    skos:closeMatch <https://dbpedia.org/resource/Explainable_artificial_intelligence> .
+
+hi:CounterfactualExplanationPattern a hi:ExplanationPattern ;
+    rdfs:label "counterfactual explanation" .
+
+# New capabilities
+hi:TrustCalibration a hi:Capability, owl:NamedIndividual ;
+    rdfs:label "trust calibration" ;
+    skos:closeMatch <https://dbpedia.org/resource/Trust_(social_sciences)> .
+
+hi:Personalization a hi:Capability, owl:NamedIndividual ;
+    rdfs:label "personalization" .
+
+hi:HumanOversightCapability a hi:Capability, owl:NamedIndividual ;
+    rdfs:label "human oversight capability" .
+
+hi:SharedDecisionMaking a hi:Capability, owl:NamedIndividual ;
+    rdfs:label "shared decision making" .
+
+hi:EvidenceRetrieval a hi:Capability, owl:NamedIndividual ;
+    rdfs:label "evidence retrieval" .
+
+hi:ReflectiveInteraction a hi:Capability, owl:NamedIndividual ;
+    rdfs:label "reflective interaction" .
+
+hi:ScientificValidation a hi:Capability, owl:NamedIndividual ;
+    rdfs:label "scientific validation" .
+
+hi:GazeAwareness a hi:Capability, owl:NamedIndividual ;
+    rdfs:label "gaze awareness" ;
+    skos:closeMatch <https://dbpedia.org/resource/Eye_tracking> .
+
+# Domains
+hi:HealthcareDomain a hi:Domain, owl:NamedIndividual ;
+    rdfs:label "healthcare" ;
+    skos:exactMatch <https://dbpedia.org/resource/Health_care> .
+
+hi:EducationDomain a hi:Domain, owl:NamedIndividual ;
+    rdfs:label "education" ;
+    skos:exactMatch <https://dbpedia.org/resource/Education> .
+
+hi:ResearchDomain a hi:Domain, owl:NamedIndividual ;
+    rdfs:label "scientific research" ;
+    skos:exactMatch <https://dbpedia.org/resource/Scientific_method> .
+
+hi:CulturalHeritageDomain a hi:Domain, owl:NamedIndividual ;
+    rdfs:label "cultural heritage" ;
+    skos:exactMatch <https://dbpedia.org/resource/Cultural_heritage> .
+
+hi:PublicPolicyDomain a hi:Domain, owl:NamedIndividual ;
+    rdfs:label "public policy" ;
+    skos:exactMatch <https://dbpedia.org/resource/Public_policy> .
+
+# Contexts
+hi:HighStakesDecisionContext a hi:Context, owl:NamedIndividual ;
+    rdfs:label "high-stakes decision context" .
+
+hi:PersonalizedLearningContext a hi:Context, owl:NamedIndividual ;
+    rdfs:label "personalized learning context" .
+
+hi:ResearchWorkflowContext a hi:Context, owl:NamedIndividual ;
+    rdfs:label "research workflow context" .
+
+hi:ImmersiveInteractionContext a hi:Context, owl:NamedIndividual ;
+    rdfs:label "immersive interaction context" .
+
+hi:PublicHealthPolicyContext a hi:Context, owl:NamedIndividual ;
+    rdfs:label "public health policy context" .
+
+# End goals
+hi:AccurateDiagnosis a hi:Endgoal, owl:NamedIndividual ;
+    rdfs:label "accurate diagnosis" .
+
+hi:PersonalizedLearningImprovement a hi:Endgoal, owl:NamedIndividual ;
+    rdfs:label "personalized learning improvement" .
+
+hi:RobustResearchDiscovery a hi:Endgoal, owl:NamedIndividual ;
+    rdfs:label "robust research discovery" .
+
+# Ethical considerations
+hi:TrustEthic a hi:EthicalConsideration, owl:NamedIndividual ;
+    rdfs:label "trust" ;
+    skos:closeMatch <https://dbpedia.org/resource/Trust_(social_sciences)> .
+
+hi:TransparencyEthic a hi:EthicalConsideration, owl:NamedIndividual ;
+    rdfs:label "transparency" ;
+    skos:closeMatch <https://dbpedia.org/resource/Transparency_(behavior)> .
+
+hi:PrivacyProtection a hi:EthicalConsideration, owl:NamedIndividual ;
+    rdfs:label "privacy protection" ;
+    skos:exactMatch <https://dbpedia.org/resource/Information_privacy> .
+
+hi:FairnessEthic a hi:EthicalConsideration, owl:NamedIndividual ;
+    rdfs:label "fairness" .
+
+hi:SafetyEthic a hi:EthicalConsideration, owl:NamedIndividual ;
+    rdfs:label "safety" .
+
+hi:HumanOversightEthic a hi:EthicalConsideration, owl:NamedIndividual ;
+    rdfs:label "human oversight" .
+
+#################################################################
+# COMMON INFORMATION PROCESSING INDIVIDUALS
+#################################################################
+
+hi:SimilaritySearchAndAnalysis a hi:InformationProcessing ;
+    hi:informationMethod hi:Hybrid ;
+    hi:processingTask hi:Reasoning , hi:Learning .
+
+hi:AdaptiveLearningAnalytics a hi:InformationProcessing ;
+    hi:informationMethod hi:Hybrid ;
+    hi:processingTask hi:Learning , hi:Reasoning .
+
+hi:LiteratureSynthesisPipeline a hi:InformationProcessing ;
+    hi:informationMethod hi:Neuro-symbolic ;
+    hi:processingTask hi:Reasoning , hi:Generating .
+
+hi:TrustAwareDecisionSupport a hi:InformationProcessing ;
+    hi:informationMethod hi:Statistical ;
+    hi:processingTask hi:Reasoning .
+
+#################################################################
+# OPTIONAL EXTERNAL VOCABULARY LINKS FOR REUSE
+#################################################################
+
+hi:Patient rdfs:subClassOf foaf:Person .
+hi:MedicalProfessional rdfs:subClassOf foaf:Person .
+hi:RemedialTeacher rdfs:subClassOf foaf:Person .
+hi:EducationalTherapist rdfs:subClassOf foaf:Person .
+hi:ResearchScientist rdfs:subClassOf foaf:Person .

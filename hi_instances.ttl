@@ -1,0 +1,395 @@
+@prefix hi: <http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+#################################################################
+# ACTORS
+#################################################################
+
+# Healthcare scenario actors
+hi:Susan a hi:Patient ;
+    foaf:name "Susan" ;
+    hi:inScenario hi:HealthcareDiagnosisTeam .
+
+hi:PrimaryCaregiver a hi:MedicalProfessional ;
+    foaf:name "Primary caregiver" ;
+    hi:capability hi:Communication , hi:Responsibility , hi:SharedDecisionMaking ;
+    hi:inScenario hi:HealthcareDiagnosisTeam ;
+    hi:collaboratesWith hi:DiagnosisAISystem , hi:SpecialistA , hi:SpecialistB .
+
+hi:SpecialistA a hi:MedicalProfessional ;
+    foaf:name "Specialist A" ;
+    hi:capability hi:Responsibility , hi:ScientificValidation ;
+    hi:inScenario hi:HealthcareDiagnosisTeam ;
+    hi:collaboratesWith hi:DiagnosisAISystem .
+
+hi:SpecialistB a hi:MedicalProfessional ;
+    foaf:name "Specialist B" ;
+    hi:capability hi:Responsibility , hi:ScientificValidation ;
+    hi:inScenario hi:HealthcareDiagnosisTeam ;
+    hi:collaboratesWith hi:DiagnosisAISystem .
+
+hi:DiagnosisAISystem a hi:DecisionSupportSystem ;
+    rdfs:label "AI search and analysis system" ;
+    hi:capability hi:EvidenceRetrieval , hi:Transparency , hi:HumanOversightCapability , hi:TrustCalibration ;
+    hi:processingInformation hi:SimilaritySearchAndAnalysis , hi:TrustAwareDecisionSupport ;
+    hi:inScenario hi:HealthcareDiagnosisTeam .
+
+# Education scenario actors
+hi:Marie a hi:RemedialTeacher ;
+    foaf:name "Marie" ;
+    hi:capability hi:Communication , hi:Collaborativeness ;
+    hi:inScenario hi:ChildEducationTeam ;
+    hi:collaboratesWith hi:John , hi:MIKE , hi:Alex .
+
+hi:John a hi:EducationalTherapist ;
+    foaf:name "John" ;
+    hi:capability hi:Communication , hi:ReflectiveInteraction ;
+    hi:inScenario hi:ChildEducationTeam ;
+    hi:collaboratesWith hi:Marie , hi:MIKE , hi:Alex .
+
+hi:Alex a hi:Child ;
+    foaf:name "Alex" ;
+    hi:inScenario hi:ChildEducationTeam ;
+    hi:collaboratesWith hi:MIKE .
+
+hi:MIKE a hi:AssistiveRobotSystem ;
+    foaf:name "MIKE" ;
+    hi:capability hi:Personalization , hi:GazeAwareness , hi:Adaptiveness , hi:Communication ;
+    hi:processingInformation hi:AdaptiveLearningAnalytics ;
+    hi:inScenario hi:ChildEducationTeam .
+
+# Research scenario actors
+hi:LeadScientist a hi:ResearchScientist ;
+    foaf:name "Lead scientist" ;
+    hi:capability hi:ScientificValidation , hi:Transparency , hi:Responsibility ;
+    hi:inScenario hi:ResearchHITeam ;
+    hi:collaboratesWith hi:ResearchAISystem .
+
+hi:ResearchAISystem a hi:LiteratureAnalysisSystem ;
+    rdfs:label "research literature and data analysis system" ;
+    hi:capability hi:EvidenceRetrieval , hi:Explainability , hi:ScientificValidation , hi:HumanOversightCapability ;
+    hi:processingInformation hi:LiteratureSynthesisPipeline ;
+    hi:inScenario hi:ResearchHITeam .
+
+#################################################################
+# INTERACTIONS
+#################################################################
+
+hi:HealthcareInteraction a hi:Interaction ;
+    hi:interactionMethod hi:Collaboration-based ;
+    hi:interactionTask hi:Recommendation , hi:Question-Answering , hi:Explainability ;
+    hi:interactingAgent hi:Susan , hi:PrimaryCaregiver , hi:SpecialistA , hi:SpecialistB , hi:DiagnosisAISystem .
+
+hi:EducationInteraction a hi:Interaction ;
+    hi:interactionMethod hi:Multimodal , hi:Collaboration-based ;
+    hi:interactionTask hi:Recommendation , hi:Question-Answering ;
+    hi:interactingAgent hi:Marie , hi:John , hi:Alex , hi:MIKE .
+
+hi:ResearchInteraction a hi:Interaction ;
+    hi:interactionMethod hi:Collaboration-based ;
+    hi:interactionTask hi:Explainability , hi:Recommendation ;
+    hi:interactingAgent hi:LeadScientist , hi:ResearchAISystem .
+
+#################################################################
+# THREE CHOSEN SCENARIOS
+#################################################################
+
+hi:HealthcareDiagnosisTeam a hi:HealthcareDecisionScenario ;
+    rdfs:label "T3 Healthcare Diagnosis Team" ;
+    hi:domain hi:HealthcareDomain ;
+    hi:context hi:HighStakesDecisionContext ;
+    hi:endgoal hi:AccurateDiagnosis ;
+    hi:hasEthicalConsideration hi:TrustEthic , hi:TransparencyEthic , hi:HumanOversightEthic , hi:SafetyEthic ;
+    hi:hasInteraction hi:HealthcareInteraction ;
+    hi:involvesActor hi:Susan , hi:PrimaryCaregiver , hi:SpecialistA , hi:SpecialistB , hi:DiagnosisAISystem ;
+    hi:hasScenarioVariant hi:HealthcareDiagnosisBestCase , hi:HealthcareDiagnosisWorstCase ;
+    hi:hasAutonomyLevel hi:DynamicAutonomy ;
+    hi:hasTrustState hi:CalibratedTrust ;
+    hi:usesExplanationPattern hi:InteractiveExplanationPattern ;
+    hi:scenarioNote "Medical professionals collaborate with an AI search and analysis system to identify difficult diagnoses while maintaining human oversight." .
+
+hi:HealthcareDiagnosisBestCase a hi:ScenarioVariant ;
+    rdfs:label "Healthcare diagnosis best case" ;
+    hi:variantOfScenario hi:HealthcareDiagnosisTeam ;
+    hi:domain hi:HealthcareDomain ;
+    hi:context hi:HighStakesDecisionContext ;
+    hi:endgoal hi:AccurateDiagnosis ;
+    hi:hasEthicalConsideration hi:TrustEthic , hi:TransparencyEthic , hi:HumanOversightEthic ;
+    hi:hasInteraction hi:HealthcareInteraction ;
+    hi:involvesActor hi:Susan , hi:PrimaryCaregiver , hi:SpecialistA , hi:SpecialistB , hi:DiagnosisAISystem ;
+    hi:hasAutonomyLevel hi:DynamicAutonomy ;
+    hi:hasTrustState hi:CalibratedTrust ;
+    hi:usesExplanationPattern hi:InteractiveExplanationPattern ;
+    hi:scenarioNote "The team understands each other's expertise and the AI limitations, which leads to correct diagnosis." .
+
+hi:HealthcareDiagnosisWorstCase a hi:ScenarioVariant ;
+    rdfs:label "Healthcare diagnosis worst case" ;
+    hi:variantOfScenario hi:HealthcareDiagnosisTeam ;
+    hi:domain hi:HealthcareDomain ;
+    hi:context hi:HighStakesDecisionContext ;
+    hi:endgoal hi:AccurateDiagnosis ;
+    hi:hasEthicalConsideration hi:TrustEthic , hi:SafetyEthic ;
+    hi:hasInteraction hi:HealthcareInteraction ;
+    hi:involvesActor hi:Susan , hi:PrimaryCaregiver , hi:SpecialistA , hi:SpecialistB , hi:DiagnosisAISystem ;
+    hi:hasAutonomyLevel hi:AILedAutonomy ;
+    hi:hasTrustState hi:OverTrust ;
+    hi:usesExplanationPattern hi:InteractiveExplanationPattern ;
+    hi:scenarioNote "Lack of knowledge sharing and poor calibration of trust in the AI lead to misdiagnosis and loss of trust." .
+
+hi:ChildEducationTeam a hi:EducationSupportScenario ;
+    rdfs:label "T2 Child Education Team" ;
+    hi:domain hi:EducationDomain ;
+    hi:context hi:PersonalizedLearningContext ;
+    hi:endgoal hi:PersonalizedLearningImprovement ;
+    hi:hasEthicalConsideration hi:TrustEthic , hi:FairnessEthic , hi:HumanOversightEthic ;
+    hi:hasInteraction hi:EducationInteraction ;
+    hi:involvesActor hi:Marie , hi:John , hi:Alex , hi:MIKE ;
+    hi:hasScenarioVariant hi:ChildEducationBestCase , hi:ChildEducationWorstCase ;
+    hi:hasAutonomyLevel hi:DynamicAutonomy ;
+    hi:hasTrustState hi:CalibratedTrust ;
+    hi:usesExplanationPattern hi:ProgressiveDisclosurePattern ;
+    hi:scenarioNote "Teacher, therapist, child, and assistive robot co-design and adapt a personalized learning program." .
+
+hi:ChildEducationBestCase a hi:ScenarioVariant ;
+    rdfs:label "Child education best case" ;
+    hi:variantOfScenario hi:ChildEducationTeam ;
+    hi:domain hi:EducationDomain ;
+    hi:context hi:PersonalizedLearningContext ;
+    hi:endgoal hi:PersonalizedLearningImprovement ;
+    hi:hasEthicalConsideration hi:TrustEthic , hi:FairnessEthic , hi:HumanOversightEthic ;
+    hi:hasInteraction hi:EducationInteraction ;
+    hi:involvesActor hi:Marie , hi:John , hi:Alex , hi:MIKE ;
+    hi:hasAutonomyLevel hi:DynamicAutonomy ;
+    hi:hasTrustState hi:CalibratedTrust ;
+    hi:usesExplanationPattern hi:ProgressiveDisclosurePattern ;
+    hi:scenarioNote "The robot provides useful feedback and the humans continuously refine the curriculum, improving Alex's confidence and performance." .
+
+hi:ChildEducationWorstCase a hi:ScenarioVariant ;
+    rdfs:label "Child education worst case" ;
+    hi:variantOfScenario hi:ChildEducationTeam ;
+    hi:domain hi:EducationDomain ;
+    hi:context hi:PersonalizedLearningContext ;
+    hi:endgoal hi:PersonalizedLearningImprovement ;
+    hi:hasEthicalConsideration hi:FairnessEthic ;
+    hi:hasInteraction hi:EducationInteraction ;
+    hi:involvesActor hi:Marie , hi:John , hi:Alex , hi:MIKE ;
+    hi:hasAutonomyLevel hi:AILedAutonomy ;
+    hi:hasTrustState hi:UnderTrust ;
+    hi:usesExplanationPattern hi:ProgressiveDisclosurePattern ;
+    hi:scenarioNote "Poor coordination or poor robot adaptation reduces learning effectiveness and child engagement." .
+
+hi:ResearchHITeam a hi:ResearchCollaborationScenario ;
+    rdfs:label "T1 Research HI Team" ;
+    hi:domain hi:ResearchDomain ;
+    hi:context hi:ResearchWorkflowContext ;
+    hi:endgoal hi:RobustResearchDiscovery ;
+    hi:hasEthicalConsideration hi:TransparencyEthic , hi:TrustEthic , hi:HumanOversightEthic ;
+    hi:hasInteraction hi:ResearchInteraction ;
+    hi:involvesActor hi:LeadScientist , hi:ResearchAISystem ;
+    hi:hasScenarioVariant hi:ResearchHIBestCase , hi:ResearchHIWorstCase ;
+    hi:hasAutonomyLevel hi:DynamicAutonomy ;
+    hi:hasTrustState hi:CalibratedTrust ;
+    hi:usesExplanationPattern hi:CounterfactualExplanationPattern ;
+    hi:scenarioNote "A scientist and an AI system collaborate on literature analysis, data synthesis, and validation in a research pipeline." .
+
+hi:ResearchHIBestCase a hi:ScenarioVariant ;
+    rdfs:label "Research HI team best case" ;
+    hi:variantOfScenario hi:ResearchHITeam ;
+    hi:domain hi:ResearchDomain ;
+    hi:context hi:ResearchWorkflowContext ;
+    hi:endgoal hi:RobustResearchDiscovery ;
+    hi:hasEthicalConsideration hi:TransparencyEthic , hi:TrustEthic ;
+    hi:hasInteraction hi:ResearchInteraction ;
+    hi:involvesActor hi:LeadScientist , hi:ResearchAISystem ;
+    hi:hasAutonomyLevel hi:DynamicAutonomy ;
+    hi:hasTrustState hi:CalibratedTrust ;
+    hi:usesExplanationPattern hi:CounterfactualExplanationPattern ;
+    hi:scenarioNote "The AI reviews methods and evidence, while the human scientists validate and contextualize the outputs." .
+
+hi:ResearchHIWorstCase a hi:ScenarioVariant ;
+    rdfs:label "Research HI team worst case" ;
+    hi:variantOfScenario hi:ResearchHITeam ;
+    hi:domain hi:ResearchDomain ;
+    hi:context hi:ResearchWorkflowContext ;
+    hi:endgoal hi:RobustResearchDiscovery ;
+    hi:hasEthicalConsideration hi:TransparencyEthic ;
+    hi:hasInteraction hi:ResearchInteraction ;
+    hi:involvesActor hi:LeadScientist , hi:ResearchAISystem ;
+    hi:hasAutonomyLevel hi:AILedAutonomy ;
+    hi:hasTrustState hi:OverTrust ;
+    hi:usesExplanationPattern hi:CounterfactualExplanationPattern ;
+    hi:scenarioNote "Researchers over-rely on flawed or outdated AI-generated evidence and fail to cross-check it." .
+
+#################################################################
+# PAPER INSTANCES (11)
+#################################################################
+
+hi:Paper1_TrustFactorsGame a hi:ResearchPaper, bibo:AcademicArticle ;
+    hi:paperTitle "Human-AI Collaboration via Trust Factors: A Collaborative Game Use Case" ;
+    hi:publicationYear "2025"^^xsd:gYear ;
+    hi:doi "10.3233/FAIA250625" ;
+    dcterms:identifier "10.3233/FAIA250625" ;
+    dcterms:subject <https://dbpedia.org/resource/Reinforcement_learning> ,
+        <https://dbpedia.org/resource/Trust_(social_sciences)> ;
+    hi:relevantToScenario hi:HealthcareDiagnosisTeam , hi:ChildEducationTeam ;
+    hi:hasAutonomyLevel hi:DynamicAutonomy ;
+    hi:hasTrustState hi:CalibratedTrust ;
+    hi:scenarioNote "Trust-aware task delegation and collaboration." .
+
+hi:Paper2_GazeAwarenessVR a hi:ResearchPaper, bibo:AcademicArticle ;
+    hi:paperTitle "Real-Time Gaze Awareness in Conversational Agents: Enhancing Collaboration and Personalization in VR Art Experiences" ;
+    hi:publicationYear "2025"^^xsd:gYear ;
+    hi:doi "10.3233/FAIA250634" ;
+    dcterms:identifier "10.3233/FAIA250634" ;
+    dcterms:subject <https://dbpedia.org/resource/Eye_tracking> ,
+        <https://dbpedia.org/resource/Virtual_reality> ,
+        <https://dbpedia.org/resource/Cultural_heritage> ;
+    hi:relevantToScenario hi:ChildEducationTeam ;
+    hi:hasAutonomyLevel hi:HumanLedAutonomy ;
+    hi:usesExplanationPattern hi:InteractiveExplanationPattern ;
+    hi:scenarioNote "Gaze-aware personalization and collaboration." .
+
+hi:Paper3_HybridMoralDecisionMaking a hi:ResearchPaper, bibo:AcademicArticle ;
+    hi:paperTitle "The Future of Hybrid Moral Decision-Making: Exploring the Alignment of Default Moral Reasoning Architectures in Humans and LLMs" ;
+    hi:publicationYear "2025"^^xsd:gYear ;
+    hi:doi "10.3233/FAIA250632" ;
+    dcterms:identifier "10.3233/FAIA250632" ;
+    dcterms:subject <https://dbpedia.org/resource/Morality> ,
+        <https://dbpedia.org/resource/Large_language_model> ;
+    hi:relevantToScenario hi:HealthcareDiagnosisTeam ;
+    hi:hasAutonomyLevel hi:HumanLedAutonomy ;
+    hi:hasTrustState hi:CalibratedTrust ;
+    hi:scenarioNote "Human-LLM moral alignment and disagreement." .
+
+hi:Paper4_EEGTrustCalibration a hi:ResearchPaper, bibo:AcademicArticle ;
+    hi:paperTitle "Detecting Trust Calibration Traits in AI with EEG Signals for Speech Deception" ;
+    hi:publicationYear "2025"^^xsd:gYear ;
+    hi:doi "10.3233/FAIA250631" ;
+    dcterms:identifier "10.3233/FAIA250631" ;
+    dcterms:subject <https://dbpedia.org/resource/Electroencephalography> ,
+        <https://dbpedia.org/resource/Decision_support_system> ;
+    hi:relevantToScenario hi:HealthcareDiagnosisTeam ;
+    hi:hasAutonomyLevel hi:DynamicAutonomy ;
+    hi:hasTrustState hi:CalibratedTrust ;
+    hi:scenarioNote "EEG-based detection of calibrated trust, under-trust and over-trust." .
+
+hi:Paper5_PastEnvironments a hi:ResearchPaper, bibo:AcademicArticle ;
+    hi:paperTitle "AI-Assisted Reconstruction of Past Environments" ;
+    hi:publicationYear "2025"^^xsd:gYear ;
+    hi:doi "10.3233/FAIA250638" ;
+    dcterms:identifier "10.3233/FAIA250638" ;
+    dcterms:subject <https://dbpedia.org/resource/Archaeology> ,
+        <https://dbpedia.org/resource/Machine_learning> ,
+        <https://dbpedia.org/resource/Cultural_heritage> ;
+    hi:relevantToScenario hi:ResearchHITeam ;
+    hi:hasAutonomyLevel hi:DynamicAutonomy ;
+    hi:usesExplanationPattern hi:InteractiveExplanationPattern ;
+    hi:scenarioNote "Human-in-the-loop predictive and generative modeling for archaeology." .
+
+hi:Paper6_SocialAIHealthyLifestyle a hi:ResearchPaper, bibo:AcademicArticle ;
+    hi:paperTitle "Social AI for a Healthier Lifestyle: Four Competencies to Manage and Prevent Chronic Diseases" ;
+    hi:publicationYear "2025"^^xsd:gYear ;
+    hi:doi "10.3233/FAIA250649" ;
+    dcterms:identifier "10.3233/FAIA250649" ;
+    dcterms:subject <https://dbpedia.org/resource/Health_care> ,
+        <https://dbpedia.org/resource/Decision_support_system> ;
+    hi:relevantToScenario hi:HealthcareDiagnosisTeam , hi:ChildEducationTeam ;
+    hi:hasAutonomyLevel hi:DynamicAutonomy ;
+    hi:usesExplanationPattern hi:CounterfactualExplanationPattern ;
+    hi:scenarioNote "Social competencies, responsible explanations, reflection and support networks." .
+
+hi:Paper7_OrganDonationSimulation a hi:ResearchPaper, bibo:AcademicArticle ;
+    hi:paperTitle "Experiencing the Effects of Organ Donation Policies Using Simulations" ;
+    hi:publicationYear "2025"^^xsd:gYear ;
+    hi:doi "10.3233/FAIA250667" ;
+    dcterms:identifier "10.3233/FAIA250667" ;
+    dcterms:subject <https://dbpedia.org/resource/Public_health> ,
+        <https://dbpedia.org/resource/Organ_donation> ,
+        <https://dbpedia.org/resource/Agent-based_model> ;
+    hi:relevantToScenario hi:HealthcareDiagnosisTeam ;
+    hi:hasAutonomyLevel hi:HumanLedAutonomy ;
+    hi:hasTrustState hi:CalibratedTrust ;
+    hi:scenarioNote "Simulation as a safe policy exploration and public understanding tool." .
+
+hi:Paper8_ExplanationPatterns a hi:ResearchPaper, bibo:AcademicArticle ;
+    hi:paperTitle "Formalizing Explanation Design Through Interaction Patterns in Human-AI Decision Support" ;
+    hi:publicationYear "2025"^^xsd:gYear ;
+    hi:doi "10.3233/FAIA250644" ;
+    dcterms:identifier "10.3233/FAIA250644" ;
+    dcterms:subject <https://dbpedia.org/resource/Explainable_artificial_intelligence> ,
+        <https://dbpedia.org/resource/Human%E2%80%93computer_interaction> ;
+    hi:relevantToScenario hi:HealthcareDiagnosisTeam , hi:ChildEducationTeam ;
+    hi:hasAutonomyLevel hi:HumanLedAutonomy ;
+    hi:usesExplanationPattern hi:ProgressiveDisclosurePattern , hi:InteractiveExplanationPattern ;
+    hi:scenarioNote "Explanation stream patterns for decision support." .
+
+hi:Paper9_FaceMatchingDecisionSupport a hi:ResearchPaper, bibo:AcademicArticle ;
+    hi:paperTitle "Human Response to Decision Support in Face Matching: The Influence of Task Difficulty and Machine Accuracy" ;
+    hi:publicationYear "2025"^^xsd:gYear ;
+    hi:doi "10.3233/FAIA250657" ;
+    dcterms:identifier "10.3233/FAIA250657" ;
+    dcterms:subject <https://dbpedia.org/resource/Decision_support_system> ,
+        <https://dbpedia.org/resource/Facial_recognition_system> ;
+    hi:relevantToScenario hi:HealthcareDiagnosisTeam ;
+    hi:hasAutonomyLevel hi:DynamicAutonomy ;
+    hi:hasTrustState hi:OverTrust ;
+    hi:scenarioNote "Task difficulty and perceived system quality shape human reliance." .
+
+hi:Paper10_BRIDGET a hi:ResearchPaper, bibo:AcademicArticle ;
+    hi:paperTitle "Bridging the Gap in Hybrid Decision-Making Systems" ;
+    hi:publicationYear "2025"^^xsd:gYear ;
+    hi:doi "10.3233/FAIA250623" ;
+    dcterms:identifier "10.3233/FAIA250623" ;
+    dcterms:subject <https://dbpedia.org/resource/Human-in-the-loop> ,
+        <https://dbpedia.org/resource/Explainable_artificial_intelligence> ;
+    hi:relevantToScenario hi:HealthcareDiagnosisTeam , hi:ChildEducationTeam ;
+    hi:hasAutonomyLevel hi:DynamicAutonomy ;
+    hi:hasTrustState hi:CalibratedTrust ;
+    hi:scenarioNote "Dynamic switching between human-led and machine-led decision statuses." .
+
+hi:Paper11_OncologicalRadiotherapy a hi:ResearchPaper, bibo:AcademicArticle ;
+    hi:paperTitle "Human-AI Framework to Investigate New Promising Oncological Radiotherapy Techniques" ;
+    hi:publicationYear "2025"^^xsd:gYear ;
+    hi:doi "10.3233/FAIA250651" ;
+    dcterms:identifier "10.3233/FAIA250651" ;
+    dcterms:subject <https://dbpedia.org/resource/Radiotherapy> ,
+        <https://dbpedia.org/resource/Medical_imaging> ,
+        <https://dbpedia.org/resource/Artificial_intelligence> ;
+    hi:relevantToScenario hi:ResearchHITeam , hi:HealthcareDiagnosisTeam ;
+    hi:hasAutonomyLevel hi:DynamicAutonomy ;
+    hi:usesExplanationPattern hi:CounterfactualExplanationPattern ;
+    hi:scenarioNote "Human-AI workflow for preclinical radiotherapy research and validation." .
+
+#################################################################
+# OPTIONAL SUPPORT LINKS FROM SCENARIOS TO PAPERS
+#################################################################
+
+hi:HealthcareDiagnosisTeam hi:supportedByPaper
+    hi:Paper1_TrustFactorsGame ,
+    hi:Paper3_HybridMoralDecisionMaking ,
+    hi:Paper4_EEGTrustCalibration ,
+    hi:Paper6_SocialAIHealthyLifestyle ,
+    hi:Paper7_OrganDonationSimulation ,
+    hi:Paper8_ExplanationPatterns ,
+    hi:Paper9_FaceMatchingDecisionSupport ,
+    hi:Paper10_BRIDGET ,
+    hi:Paper11_OncologicalRadiotherapy .
+
+hi:ChildEducationTeam hi:supportedByPaper
+    hi:Paper1_TrustFactorsGame ,
+    hi:Paper2_GazeAwarenessVR ,
+    hi:Paper6_SocialAIHealthyLifestyle ,
+    hi:Paper8_ExplanationPatterns ,
+    hi:Paper10_BRIDGET .
+
+hi:ResearchHITeam hi:supportedByPaper
+    hi:Paper5_PastEnvironments ,
+    hi:Paper11_OncologicalRadiotherapy .

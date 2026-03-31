@@ -1,0 +1,16 @@
+predicate,count
+type,227
+involvesActor,33
+domain,31
+capability,26
+subject,26
+range,26
+hasEthicalConsideration,22
+hasAutonomyLevel,20
+subClassOf,20
+supportedByPaper,16
+relevantToScenario,16
+usesExplanationPattern,15
+hasTrustState,15
+collaboratesWith,13
+inScenario,11

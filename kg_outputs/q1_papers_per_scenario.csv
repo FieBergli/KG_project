@@ -1,0 +1,4 @@
+scenario,paperCount
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/HealthcareDiagnosisTeam,9
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ChildEducationTeam,5
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ResearchHITeam,2

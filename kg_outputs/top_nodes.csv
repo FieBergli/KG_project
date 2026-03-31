@@ -1,0 +1,16 @@
+node,degree
+NamedIndividual,55
+HealthcareDiagnosisTeam,44
+ChildEducationTeam,33
+Class,31
+ResearchHITeam,23
+ObjectProperty,22
+HealthcareDiagnosisBestCase,18
+ResearchPaper,18
+Scenario,17
+HealthcareDiagnosisWorstCase,17
+ChildEducationBestCase,17
+Capability,16
+DynamicAutonomy,15
+DiagnosisAISystem,15
+ChildEducationWorstCase,15

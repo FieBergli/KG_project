@@ -1,0 +1,16 @@
+entity,trustState
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ChildEducationBestCase,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CalibratedTrust
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ChildEducationTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CalibratedTrust
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ChildEducationWorstCase,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/UnderTrust
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/HealthcareDiagnosisBestCase,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CalibratedTrust
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/HealthcareDiagnosisTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CalibratedTrust
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/HealthcareDiagnosisWorstCase,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/OverTrust
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper10_BRIDGET,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CalibratedTrust
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper1_TrustFactorsGame,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CalibratedTrust
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper3_HybridMoralDecisionMaking,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CalibratedTrust
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper4_EEGTrustCalibration,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CalibratedTrust
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper7_OrganDonationSimulation,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CalibratedTrust
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper9_FaceMatchingDecisionSupport,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/OverTrust
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ResearchHIBestCase,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CalibratedTrust
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ResearchHITeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CalibratedTrust
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ResearchHIWorstCase,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/OverTrust

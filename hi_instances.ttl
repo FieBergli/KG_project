@@ -55,7 +55,7 @@ hi:John a hi:EducationalTherapist ;
     hi:inScenario hi:ChildEducationTeam ;
     hi:collaboratesWith hi:Marie , hi:MIKE , hi:Alex .
 
-hi:Alex a hi:Child ;
+hi:Alex a hi:Human ;
     foaf:name "Alex" ;
     hi:inScenario hi:ChildEducationTeam ;
     hi:collaboratesWith hi:MIKE .

@@ -14,6 +14,7 @@
 #################################################################
 
 hi:ResearchPaper a owl:Class ;
+    owl:disjointWith hi:Scenario ;
     rdfs:subClassOf schema:ScholarlyArticle ,
         [ a owl:Restriction ;
           owl:onProperty hi:relevantToScenario ;
@@ -95,6 +96,8 @@ hi:TrustState a owl:Class .
 hi:AutonomyLevel a owl:Class .
 hi:ExplanationPattern a owl:Class .
 
+hi:Capability owl:disjointWith hi:InteractionTask .
+
 [ a owl:AllDisjointClasses ;
   owl:members ( hi:HealthcareDecisionScenario hi:EducationSupportScenario hi:ResearchCollaborationScenario ) ] .
 
@@ -163,6 +166,10 @@ hi:scenarioNote a owl:DatatypeProperty ;
     rdfs:domain hi:Scenario ;
     rdfs:range xsd:string .
 
+hi:paperNote a owl:DatatypeProperty ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:string .
+
 #################################################################
 # CONTROLLED VOCABULARY INDIVIDUALS
 #################################################################
@@ -226,6 +233,9 @@ hi:ScientificValidation a hi:Capability, owl:NamedIndividual ;
 hi:GazeAwareness a hi:Capability, owl:NamedIndividual ;
     rdfs:label "gaze awareness" ;
     skos:closeMatch <https://dbpedia.org/resource/Eye_tracking> .
+
+hi:ExplanationSupportCapability a hi:Capability, owl:NamedIndividual ;
+    rdfs:label "explanation support" .
 
 # Domains
 hi:HealthcareDomain a hi:Domain, owl:NamedIndividual ;

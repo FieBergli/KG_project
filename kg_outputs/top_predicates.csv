@@ -4,13 +4,13 @@ seeAlso,155
 subject,101
 closeMatch,49
 involvesActor,33
-domain,32
+domain,31
+range,26
 capability,26
-range,25
 hasEthicalConsideration,22
 hasAutonomyLevel,20
 subClassOf,19
 exactMatch,18
 relevantToScenario,16
 supportedByPaper,16
-hasTrustState,15
+creator,15

@@ -1,0 +1,3 @@
+paper,scenarioCount,scenarios,autonomyLevels,trustStates,patterns
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper10_BRIDGET,2,"HealthcareDiagnosisTeam, ChildEducationTeam",DynamicAutonomy,CalibratedTrust,"Non-literal passes as string: NotBoundError(None), Non-literal passes as string: NotBoundError(None)"
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper1_TrustFactorsGame,2,"HealthcareDiagnosisTeam, ChildEducationTeam",DynamicAutonomy,CalibratedTrust,"Non-literal passes as string: NotBoundError(None), Non-literal passes as string: NotBoundError(None)"

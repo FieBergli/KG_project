@@ -1,5 +1,5 @@
 metric,value
-total_triples,810
+total_triples,1109
 classes,31
 object_properties,22
 datatype_properties,4
@@ -11,4 +11,9 @@ actors,16
 trust_annotations,6
 autonomy_annotations,11
 explanation_pattern_annotations,5
-external_links,56
+external_links_total,340
+external_kb_links_strict,321
+dbpedia_links,218
+wikidata_links,92
+orkg_links,0
+doi_links,11

@@ -325,3 +325,537 @@ hi:MedicalProfessional rdfs:subClassOf foaf:Person .
 hi:RemedialTeacher rdfs:subClassOf foaf:Person .
 hi:EducationalTherapist rdfs:subClassOf foaf:Person .
 hi:ResearchScientist rdfs:subClassOf foaf:Person .
+
+
+
+
+
+
+
+####################################################################################################################!!!!!!!!!!!!
+#################################################################
+# EXTERNAL LINKING LAYER
+# Added to improve schema/data integration with external KBs
+#################################################################
+
+@prefix hi: <http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+#################################################################
+# 1. ONTOLOGY / CLASS / CONCEPT LINKS
+#################################################################
+
+# Core HI concepts
+hi:TrustState
+    skos:closeMatch <http://dbpedia.org/resource/Trust_(social_sciences)> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q659974> .
+
+hi:AutonomyLevel
+    skos:closeMatch <http://dbpedia.org/resource/Autonomy> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q484105> .
+
+hi:ExplanationPattern
+    skos:closeMatch <http://dbpedia.org/resource/Explainable_artificial_intelligence> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q40890078> .
+
+hi:ResearchPaper
+    skos:closeMatch <https://schema.org/ScholarlyArticle> ;
+    skos:exactMatch <http://purl.org/ontology/bibo/AcademicArticle> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Academic_publishing> .
+
+hi:Scenario
+    skos:closeMatch <http://dbpedia.org/resource/Use_case> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q613417> .
+
+hi:ScenarioVariant
+    skos:closeMatch <http://dbpedia.org/resource/Scenario_(computing)> .
+
+# Scenario subclasses
+hi:HealthcareDecisionScenario
+    skos:closeMatch <http://dbpedia.org/resource/Medical_diagnosis> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q177719> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Clinical_decision_support_system> .
+
+hi:EducationSupportScenario
+    skos:closeMatch <http://dbpedia.org/resource/Education> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q8434> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Intelligent_tutoring_system> .
+
+hi:ResearchCollaborationScenario
+    skos:closeMatch <http://dbpedia.org/resource/Scientific_method> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q336> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Research> .
+
+# Actor roles
+hi:Patient
+    skos:exactMatch <http://dbpedia.org/resource/Patient> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q181600> ;
+    rdfs:subClassOf foaf:Person .
+
+hi:MedicalProfessional
+    skos:closeMatch <http://dbpedia.org/resource/Physician> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q39631> ;
+    rdfs:subClassOf foaf:Person .
+
+hi:RemedialTeacher
+    skos:closeMatch <http://dbpedia.org/resource/Special_education> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q37226> ;
+    rdfs:subClassOf foaf:Person .
+
+hi:EducationalTherapist
+    skos:closeMatch <http://dbpedia.org/resource/Educational_psychology> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q116690214> ;
+    rdfs:subClassOf foaf:Person .
+
+hi:ResearchScientist
+    skos:exactMatch <http://dbpedia.org/resource/Scientist> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q901> ;
+    rdfs:subClassOf foaf:Person .
+
+hi:DecisionSupportSystem
+    skos:exactMatch <http://dbpedia.org/resource/Decision_support_system> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q330268> .
+
+hi:AssistiveRobotSystem
+    skos:closeMatch <http://dbpedia.org/resource/Social_robot> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q124934972> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Educational_robotics> .
+
+hi:LiteratureAnalysisSystem
+    skos:closeMatch <http://dbpedia.org/resource/Text_mining> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q58854> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Information_retrieval> .
+
+# Domains
+hi:HealthcareDomain
+    skos:exactMatch <http://dbpedia.org/resource/Health_care> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q31207> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Medicine> .
+
+hi:EducationDomain
+    skos:exactMatch <http://dbpedia.org/resource/Education> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q8434> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Learning> .
+
+hi:ResearchDomain
+    skos:exactMatch <http://dbpedia.org/resource/Research> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q42240> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Scientific_method> .
+
+hi:CulturalHeritageDomain
+    skos:exactMatch <http://dbpedia.org/resource/Cultural_heritage> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q210272> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Museum> .
+
+hi:PublicPolicyDomain
+    skos:exactMatch <http://dbpedia.org/resource/Public_policy> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q546113> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Policy> .
+
+# Contexts
+hi:HighStakesDecisionContext
+    skos:closeMatch <http://dbpedia.org/resource/Risk> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q94704927> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Decision-making> .
+
+hi:PersonalizedLearningContext
+    skos:closeMatch <http://dbpedia.org/resource/Personalized_learning> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q3620943> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Adaptive_learning> .
+
+hi:ResearchWorkflowContext
+    skos:closeMatch <http://dbpedia.org/resource/Research_and_development> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q115682347> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Scientific_workflow_system> .
+
+hi:ImmersiveInteractionContext
+    skos:closeMatch <http://dbpedia.org/resource/Virtual_reality> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q170519> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Human%E2%80%93computer_interaction> .
+
+hi:PublicHealthPolicyContext
+    skos:closeMatch <http://dbpedia.org/resource/Public_health> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q189603> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Health_policy> .
+
+# End goals
+hi:AccurateDiagnosis
+    skos:closeMatch <http://dbpedia.org/resource/Diagnosis> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q177719> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Medical_diagnosis> .
+
+hi:PersonalizedLearningImprovement
+    skos:closeMatch <http://dbpedia.org/resource/Personalized_learning> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q3620943> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Learning> .
+
+hi:RobustResearchDiscovery
+    skos:closeMatch <http://dbpedia.org/resource/Scientific_discovery> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q132859961> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Research> .
+
+# Ethics
+hi:TrustEthic
+    skos:exactMatch <http://dbpedia.org/resource/Trust_(social_sciences)> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q659974> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Trustworthiness> .
+
+hi:TransparencyEthic
+    skos:closeMatch <http://dbpedia.org/resource/Transparency_(behavior)> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q535347> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Open_government> .
+
+hi:PrivacyProtection
+    skos:exactMatch <http://dbpedia.org/resource/Information_privacy> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q20921526> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Data_security> .
+
+hi:FairnessEthic
+    skos:closeMatch <http://dbpedia.org/resource/Fairness> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q771773> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Distributive_justice> .
+
+hi:SafetyEthic
+    skos:closeMatch <http://dbpedia.org/resource/Safety> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q10566551> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Risk_management> .
+
+hi:HumanOversightEthic
+    skos:closeMatch <http://dbpedia.org/resource/Human%E2%80%93computer_interaction> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q108704339> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Human-in-the-loop> .
+
+# Capabilities / concepts
+hi:TrustCalibration
+    skos:closeMatch <http://dbpedia.org/resource/Trust_(social_sciences)> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q659974> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Calibration_(statistics)> .
+
+hi:Personalization
+    skos:closeMatch <http://dbpedia.org/resource/Personalization> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q1000371> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Recommender_system> .
+
+hi:HumanOversightCapability
+    skos:closeMatch <http://dbpedia.org/resource/Human-in-the-loop> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q108704339> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Supervision> .
+
+hi:SharedDecisionMaking
+    skos:closeMatch <http://dbpedia.org/resource/Shared_decision-making_in_medicine> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q7489544> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Decision-making> .
+
+hi:EvidenceRetrieval
+    skos:closeMatch <http://dbpedia.org/resource/Information_retrieval> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q1347572> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Document_retrieval> .
+
+hi:ReflectiveInteraction
+    skos:closeMatch <http://dbpedia.org/resource/Reflective_practice> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q7307322> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Human%E2%80%93computer_interaction> .
+
+hi:ScientificValidation
+    skos:closeMatch <http://dbpedia.org/resource/Scientific_method> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q336> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Validation_(statistics)> .
+
+hi:GazeAwareness
+    skos:exactMatch <http://dbpedia.org/resource/Eye_tracking> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q970687> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Gaze> .
+
+# Explanation patterns / trust states / autonomy states
+hi:CalibratedTrust
+    skos:closeMatch <http://dbpedia.org/resource/Trust_(social_sciences)> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q659974> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Calibration_(statistics)> .
+
+hi:UnderTrust
+    skos:closeMatch <http://dbpedia.org/resource/Skepticism> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q1395219> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Trust_(social_sciences)> .
+
+hi:OverTrust
+    skos:closeMatch <http://dbpedia.org/resource/Overconfidence_effect> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Automation_bias> .
+
+hi:HumanLedAutonomy
+    skos:closeMatch <http://dbpedia.org/resource/Human-in-the-loop> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q5936775> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Decision-making> .
+
+hi:AILedAutonomy
+    skos:closeMatch <http://dbpedia.org/resource/Autonomous_system> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Automation> .
+
+hi:DynamicAutonomy
+    skos:closeMatch <http://dbpedia.org/resource/Adaptive_system> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q2497134> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Autonomous_system> .
+
+hi:ProgressiveDisclosurePattern
+    skos:closeMatch <http://dbpedia.org/resource/Progressive_disclosure> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q4845034> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/User_interface_design> .
+
+hi:InteractiveExplanationPattern
+    skos:closeMatch <http://dbpedia.org/resource/Explainable_artificial_intelligence> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q40890078> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Human%E2%80%93computer_interaction> .
+
+hi:CounterfactualExplanationPattern
+    skos:closeMatch <http://dbpedia.org/resource/Counterfactual_conditional> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Explainable_artificial_intelligence> .
+
+#################################################################
+# 2. SCENARIO / ACTOR INSTANCE LINKS
+#################################################################
+
+# Main scenarios
+hi:HealthcareDiagnosisTeam
+    rdfs:seeAlso <http://dbpedia.org/resource/Medical_diagnosis> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Clinical_decision_support_system> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q177719> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q5133829> .
+
+hi:ChildEducationTeam
+    rdfs:seeAlso <http://dbpedia.org/resource/Intelligent_tutoring_system> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Special_education> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q1068473> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q3055492> .
+
+hi:ResearchHITeam
+    rdfs:seeAlso <http://dbpedia.org/resource/Research> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Scientific_method> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q42240> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q336> .
+
+# Scenario variants
+hi:HealthcareDiagnosisBestCase
+    rdfs:seeAlso <http://dbpedia.org/resource/Medical_diagnosis> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Patient_safety> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q177719> .
+
+hi:HealthcareDiagnosisWorstCase
+    rdfs:seeAlso <http://dbpedia.org/resource/Medical_error> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Automation_bias> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q460433> .
+
+hi:ChildEducationBestCase
+    rdfs:seeAlso <http://dbpedia.org/resource/Adaptive_learning> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Student_engagement> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q8434> .
+
+hi:ChildEducationWorstCase
+    rdfs:seeAlso <http://dbpedia.org/resource/Cognitive_load> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Learning_disability> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q8434> .
+
+hi:ResearchHIBestCase
+    rdfs:seeAlso <http://dbpedia.org/resource/Research> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Scientific_method> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q42240> .
+
+hi:ResearchHIWorstCase
+    rdfs:seeAlso <http://dbpedia.org/resource/Bias> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Retraction_of_scientific_paper> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q42240> .
+
+# Actors
+hi:Susan
+    rdfs:seeAlso <http://dbpedia.org/resource/Patient> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q181600> .
+
+hi:PrimaryCaregiver
+    rdfs:seeAlso <http://dbpedia.org/resource/Physician> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q39631> .
+
+hi:SpecialistA
+    rdfs:seeAlso <http://dbpedia.org/resource/Medical_specialty> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q930752> .
+
+hi:SpecialistB
+    rdfs:seeAlso <http://dbpedia.org/resource/Medical_specialty> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q930752> .
+
+hi:DiagnosisAISystem
+    rdfs:seeAlso <http://dbpedia.org/resource/Clinical_decision_support_system> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Artificial_intelligence_in_healthcare> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q73773633> .
+
+hi:Marie
+    rdfs:seeAlso <http://dbpedia.org/resource/Teacher> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q37226> .
+
+hi:John
+    rdfs:seeAlso <http://dbpedia.org/resource/Educational_psychology> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q59157> .
+
+hi:Alex
+    rdfs:seeAlso <http://dbpedia.org/resource/Student> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q48282> .
+
+hi:MIKE
+    rdfs:seeAlso <http://dbpedia.org/resource/Social_robot> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Educational_robotics> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q3437271> .
+
+hi:LeadScientist
+    rdfs:seeAlso <http://dbpedia.org/resource/Scientist> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q901> .
+
+hi:ResearchAISystem
+    rdfs:seeAlso <http://dbpedia.org/resource/Text_mining> ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Information_retrieval> .
+
+
+#################################################################
+# 3. PAPER DOI + TOPIC LINKS
+#################################################################
+
+hi:Paper1_TrustFactorsGame
+    rdfs:seeAlso <https://doi.org/10.3233/FAIA250625> ;
+    dcterms:subject <http://dbpedia.org/resource/Trust_(social_sciences)> ,
+                    <http://dbpedia.org/resource/Reinforcement_learning> ,
+                    <http://dbpedia.org/resource/Large_language_model> ,
+                    <http://dbpedia.org/resource/Human%E2%80%93robot_interaction> ,
+                    <http://dbpedia.org/resource/Planning> ,
+                    <https://www.wikidata.org/wiki/Q659974> ,
+                    <https://www.wikidata.org/wiki/Q859951> .
+
+hi:Paper2_GazeAwarenessVR
+    rdfs:seeAlso <https://doi.org/10.3233/FAIA250634> ;
+    dcterms:subject <http://dbpedia.org/resource/Eye_tracking> ,
+                    <http://dbpedia.org/resource/Virtual_reality> ,
+                    <http://dbpedia.org/resource/Conversational_agent> ,
+                    <http://dbpedia.org/resource/Large_language_model> ,
+                    <https://www.wikidata.org/wiki/Q970687> ,
+                    <https://www.wikidata.org/wiki/Q170519> .
+
+hi:Paper3_HybridMoralDecisionMaking
+    rdfs:seeAlso <https://doi.org/10.3233/FAIA250632> ;
+    dcterms:subject <http://dbpedia.org/resource/Morality> ,
+                    <http://dbpedia.org/resource/Consequentialism> ,
+                    <http://dbpedia.org/resource/Large_language_model> ,
+                    <http://dbpedia.org/resource/Decision-making> ,
+                    <https://www.wikidata.org/wiki/Q7489544> ,
+                    <https://www.wikidata.org/wiki/Q1331926> .
+
+hi:Paper4_EEGTrustCalibration
+    rdfs:seeAlso <https://doi.org/10.3233/FAIA250631> ;
+    dcterms:subject <http://dbpedia.org/resource/Electroencephalography> ,
+                    <http://dbpedia.org/resource/Decision_support_system> ,
+                    <http://dbpedia.org/resource/Trust_(social_sciences)> ,
+                    <http://dbpedia.org/resource/Speech> ,
+                    <http://dbpedia.org/resource/Deception> ,
+                    <https://www.wikidata.org/wiki/Q179965> ,
+                    <https://www.wikidata.org/wiki/Q52946> .
+
+hi:Paper5_PastEnvironments
+    rdfs:seeAlso <https://doi.org/10.3233/FAIA250638> ;
+    dcterms:subject <http://dbpedia.org/resource/Archaeology> ,
+                    <http://dbpedia.org/resource/Pollen> ,
+                    <http://dbpedia.org/resource/Biome> ,
+                    <http://dbpedia.org/resource/Machine_learning> ,
+                    <http://dbpedia.org/resource/Cultural_heritage> ,
+                    <https://www.wikidata.org/wiki/Q23498> ,
+                    <https://www.wikidata.org/wiki/Q2539> .
+
+hi:Paper6_SocialAIHealthyLifestyle
+    rdfs:seeAlso <https://doi.org/10.3233/FAIA250649> ;
+    dcterms:subject <http://dbpedia.org/resource/Health_care> ,
+                    <http://dbpedia.org/resource/Chronic_obstructive_pulmonary_disease> ,
+                    <http://dbpedia.org/resource/Type_2_diabetes> ,
+                    <http://dbpedia.org/resource/Decision_support_system> ,
+                    <http://dbpedia.org/resource/Personalization> ,
+                    <https://www.wikidata.org/wiki/Q31207> ,
+                    <https://www.wikidata.org/wiki/Q199804> .
+
+hi:Paper7_OrganDonationSimulation
+    rdfs:seeAlso <https://doi.org/10.3233/FAIA250667> ;
+    dcterms:subject <http://dbpedia.org/resource/Organ_donation> ,
+                    <http://dbpedia.org/resource/Public_health> ,
+                    <http://dbpedia.org/resource/Agent-based_model> ,
+                    <http://dbpedia.org/resource/Simulation> ,
+                    <http://dbpedia.org/resource/Policy> ,
+                    <https://www.wikidata.org/wiki/Q849032> ,
+                    <https://www.wikidata.org/wiki/Q189603> .
+
+hi:Paper8_ExplanationPatterns
+    rdfs:seeAlso <https://doi.org/10.3233/FAIA250644> ;
+    dcterms:subject <http://dbpedia.org/resource/Explainable_artificial_intelligence> ,
+                    <http://dbpedia.org/resource/Decision_support_system> ,
+                    <http://dbpedia.org/resource/Interaction_design> ,
+                    <http://dbpedia.org/resource/Human%E2%80%93computer_interaction> ,
+                    <http://dbpedia.org/resource/Transparency_(behavior)> ,
+                    <https://www.wikidata.org/wiki/Q40890078> ,
+                    <https://www.wikidata.org/wiki/Q330268> .
+
+hi:Paper9_FaceMatchingDecisionSupport
+    rdfs:seeAlso <https://doi.org/10.3233/FAIA250657> ;
+    dcterms:subject <http://dbpedia.org/resource/Decision_support_system> ,
+                    <http://dbpedia.org/resource/Facial_recognition_system> ,
+                    <http://dbpedia.org/resource/Computer_vision> ,
+                    <http://dbpedia.org/resource/Bias> ,
+                    <http://dbpedia.org/resource/Task_(project_management)> ,
+                    <https://www.wikidata.org/wiki/Q330268> ,
+                    <https://www.wikidata.org/wiki/Q1192553> .
+
+hi:Paper10_BRIDGET
+    rdfs:seeAlso <https://doi.org/10.3233/FAIA250623> ;
+    dcterms:subject <http://dbpedia.org/resource/Human-in-the-loop> ,
+                    <http://dbpedia.org/resource/Explainable_artificial_intelligence> ,
+                    <http://dbpedia.org/resource/Incremental_learning> ,
+                    <http://dbpedia.org/resource/Machine_learning> ,
+                    <http://dbpedia.org/resource/Decision-making> ,
+                    <https://www.wikidata.org/wiki/Q5936775> ,
+                    <https://www.wikidata.org/wiki/Q2539> .
+
+hi:Paper11_OncologicalRadiotherapy
+    rdfs:seeAlso <https://doi.org/10.3233/FAIA250651> ;
+    dcterms:subject <http://dbpedia.org/resource/Radiotherapy> ,
+                    <http://dbpedia.org/resource/Medical_imaging> ,
+                    <http://dbpedia.org/resource/Artificial_intelligence_in_healthcare> ,
+                    <http://dbpedia.org/resource/Deep_learning> ,
+                    <http://dbpedia.org/resource/Cancer> ,
+                    <https://www.wikidata.org/wiki/Q14251029> ,
+                    <https://www.wikidata.org/wiki/Q12078> .
+
+#################################################################
+# 4. AUTHOR LINKS (ORCID from paper front pages where available)
+#################################################################
+
+hi:Paper1_TrustFactorsGame
+    dcterms:creator <https://orcid.org/0009-0003-0764-3965> ,
+                    <https://orcid.org/0000-0002-2040-3355> ,
+                    <https://orcid.org/0009-0000-9508-5235> ,
+                    <https://orcid.org/0000-0002-9116-251X> ,
+                    <https://orcid.org/0000-0001-9057-8946> .
+
+hi:Paper2_GazeAwarenessVR
+    dcterms:creator <https://orcid.org/0009-0007-8266-8395> ,
+                    <https://orcid.org/0000-0003-0583-6969> ,
+                    <https://orcid.org/0000-0002-3282-1597> ,
+                    <https://orcid.org/0000-0003-4288-3334> .
+
+hi:Paper3_HybridMoralDecisionMaking
+    dcterms:creator <https://orcid.org/0000-0001-5009-1076> .
+
+hi:Paper5_PastEnvironments
+    dcterms:creator <https://orcid.org/0009-0003-8588-7930> .
+
+hi:Paper10_BRIDGET
+    dcterms:creator <https://orcid.org/0000-0003-3268-9271> ,
+                    <https://orcid.org/0009-0004-6961-7495> ,
+                    <https://orcid.org/0000-0002-2827-7613> .
+
+hi:Paper11_OncologicalRadiotherapy
+    dcterms:creator <https://orcid.org/0000-0001-5984-0408> .

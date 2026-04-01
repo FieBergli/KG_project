@@ -57,6 +57,7 @@ hi:John a hi:EducationalTherapist ;
 
 hi:Alex a hi:Human ;
     foaf:name "Alex" ;
+    rdfs:comment "Alex is the child participant in the education scenario." ;
     hi:inScenario hi:ChildEducationTeam ;
     hi:collaboratesWith hi:MIKE .
 
@@ -75,7 +76,7 @@ hi:LeadScientist a hi:ResearchScientist ;
 
 hi:ResearchAISystem a hi:LiteratureAnalysisSystem ;
     rdfs:label "research literature and data analysis system" ;
-    hi:capability hi:EvidenceRetrieval , hi:Explainability , hi:ScientificValidation , hi:HumanOversightCapability ;
+    hi:capability hi:EvidenceRetrieval , hi:ExplanationSupportCapability , hi:ScientificValidation , hi:HumanOversightCapability ;
     hi:processingInformation hi:LiteratureSynthesisPipeline ;
     hi:inScenario hi:ResearchHITeam .
 
@@ -242,7 +243,7 @@ hi:Paper1_TrustFactorsGame a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam , hi:ChildEducationTeam ;
     hi:hasAutonomyLevel hi:DynamicAutonomy ;
     hi:hasTrustState hi:CalibratedTrust ;
-    hi:scenarioNote "Trust-aware task delegation and collaboration." .
+    hi:paperNote "Trust-aware task delegation and collaboration." .
 
 hi:Paper2_GazeAwarenessVR a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:paperTitle "Real-Time Gaze Awareness in Conversational Agents: Enhancing Collaboration and Personalization in VR Art Experiences" ;
@@ -255,7 +256,7 @@ hi:Paper2_GazeAwarenessVR a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:relevantToScenario hi:ChildEducationTeam ;
     hi:hasAutonomyLevel hi:HumanLedAutonomy ;
     hi:usesExplanationPattern hi:InteractiveExplanationPattern ;
-    hi:scenarioNote "Gaze-aware personalization and collaboration." .
+    hi:paperNote "Gaze-aware personalization and collaboration." .
 
 hi:Paper3_HybridMoralDecisionMaking a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:paperTitle "The Future of Hybrid Moral Decision-Making: Exploring the Alignment of Default Moral Reasoning Architectures in Humans and LLMs" ;
@@ -267,7 +268,7 @@ hi:Paper3_HybridMoralDecisionMaking a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam ;
     hi:hasAutonomyLevel hi:HumanLedAutonomy ;
     hi:hasTrustState hi:CalibratedTrust ;
-    hi:scenarioNote "Human-LLM moral alignment and disagreement." .
+    hi:paperNote "Human-LLM moral alignment and disagreement." .
 
 hi:Paper4_EEGTrustCalibration a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:paperTitle "Detecting Trust Calibration Traits in AI with EEG Signals for Speech Deception" ;
@@ -279,7 +280,7 @@ hi:Paper4_EEGTrustCalibration a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam ;
     hi:hasAutonomyLevel hi:DynamicAutonomy ;
     hi:hasTrustState hi:CalibratedTrust ;
-    hi:scenarioNote "EEG-based detection of calibrated trust, under-trust and over-trust." .
+    hi:paperNote "EEG-based detection of calibrated trust, under-trust and over-trust." .
 
 hi:Paper5_PastEnvironments a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:paperTitle "AI-Assisted Reconstruction of Past Environments" ;
@@ -292,7 +293,7 @@ hi:Paper5_PastEnvironments a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:relevantToScenario hi:ResearchHITeam ;
     hi:hasAutonomyLevel hi:DynamicAutonomy ;
     hi:usesExplanationPattern hi:InteractiveExplanationPattern ;
-    hi:scenarioNote "Human-in-the-loop predictive and generative modeling for archaeology." .
+    hi:paperNote "Human-in-the-loop predictive and generative modeling for archaeology." .
 
 hi:Paper6_SocialAIHealthyLifestyle a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:paperTitle "Social AI for a Healthier Lifestyle: Four Competencies to Manage and Prevent Chronic Diseases" ;
@@ -304,7 +305,7 @@ hi:Paper6_SocialAIHealthyLifestyle a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam , hi:ChildEducationTeam ;
     hi:hasAutonomyLevel hi:DynamicAutonomy ;
     hi:usesExplanationPattern hi:CounterfactualExplanationPattern ;
-    hi:scenarioNote "Social competencies, responsible explanations, reflection and support networks." .
+    hi:paperNote "Social competencies, responsible explanations, reflection and support networks." .
 
 hi:Paper7_OrganDonationSimulation a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:paperTitle "Experiencing the Effects of Organ Donation Policies Using Simulations" ;
@@ -317,7 +318,7 @@ hi:Paper7_OrganDonationSimulation a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam ;
     hi:hasAutonomyLevel hi:HumanLedAutonomy ;
     hi:hasTrustState hi:CalibratedTrust ;
-    hi:scenarioNote "Simulation as a safe policy exploration and public understanding tool." .
+    hi:paperNote "Simulation as a safe policy exploration and public understanding tool." .
 
 hi:Paper8_ExplanationPatterns a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:paperTitle "Formalizing Explanation Design Through Interaction Patterns in Human-AI Decision Support" ;
@@ -329,7 +330,7 @@ hi:Paper8_ExplanationPatterns a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam , hi:ChildEducationTeam ;
     hi:hasAutonomyLevel hi:HumanLedAutonomy ;
     hi:usesExplanationPattern hi:ProgressiveDisclosurePattern , hi:InteractiveExplanationPattern ;
-    hi:scenarioNote "Explanation stream patterns for decision support." .
+    hi:paperNote "Explanation stream patterns for decision support." .
 
 hi:Paper9_FaceMatchingDecisionSupport a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:paperTitle "Human Response to Decision Support in Face Matching: The Influence of Task Difficulty and Machine Accuracy" ;
@@ -341,7 +342,7 @@ hi:Paper9_FaceMatchingDecisionSupport a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam ;
     hi:hasAutonomyLevel hi:DynamicAutonomy ;
     hi:hasTrustState hi:OverTrust ;
-    hi:scenarioNote "Task difficulty and perceived system quality shape human reliance." .
+    hi:paperNote "Task difficulty and perceived system quality shape human reliance." .
 
 hi:Paper10_BRIDGET a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:paperTitle "Bridging the Gap in Hybrid Decision-Making Systems" ;
@@ -353,7 +354,7 @@ hi:Paper10_BRIDGET a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam , hi:ChildEducationTeam ;
     hi:hasAutonomyLevel hi:DynamicAutonomy ;
     hi:hasTrustState hi:CalibratedTrust ;
-    hi:scenarioNote "Dynamic switching between human-led and machine-led decision statuses." .
+    hi:paperNote "Dynamic switching between human-led and machine-led decision statuses." .
 
 hi:Paper11_OncologicalRadiotherapy a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:paperTitle "Human-AI Framework to Investigate New Promising Oncological Radiotherapy Techniques" ;
@@ -366,7 +367,7 @@ hi:Paper11_OncologicalRadiotherapy a hi:ResearchPaper, bibo:AcademicArticle ;
     hi:relevantToScenario hi:ResearchHITeam , hi:HealthcareDiagnosisTeam ;
     hi:hasAutonomyLevel hi:DynamicAutonomy ;
     hi:usesExplanationPattern hi:CounterfactualExplanationPattern ;
-    hi:scenarioNote "Human-AI workflow for preclinical radiotherapy research and validation." .
+    hi:paperNote "Human-AI workflow for preclinical radiotherapy research and validation." .
 
 #################################################################
 # OPTIONAL SUPPORT LINKS FROM SCENARIOS TO PAPERS

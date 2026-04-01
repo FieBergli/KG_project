@@ -1,0 +1,11 @@
+score,paper,scenario,plausible_yes_no,confidence_low_med_high,notes
+0.334182,Paper6_SocialAIHealthyLifestyle,ResearchHITeam,,,
+0.324053,Paper9_FaceMatchingDecisionSupport,ResearchHITeam,,,
+0.306925,Paper9_FaceMatchingDecisionSupport,ChildEducationTeam,,,
+0.26345,Paper4_EEGTrustCalibration,ChildEducationTeam,,,
+0.246031,Paper1_TrustFactorsGame,ResearchHITeam,,,
+0.238635,Paper4_EEGTrustCalibration,ResearchHITeam,,,
+0.224036,Paper7_OrganDonationSimulation,ChildEducationTeam,,,
+0.222089,Paper3_HybridMoralDecisionMaking,ResearchHITeam,,,
+0.212975,Paper2_GazeAwarenessVR,HealthcareDiagnosisTeam,,,
+0.21198,Paper10_BRIDGET,ResearchHITeam,,,

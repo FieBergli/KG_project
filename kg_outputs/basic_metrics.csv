@@ -5,7 +5,10 @@ object_properties,22
 datatype_properties,4
 named_individuals,55
 research_papers,11
-scenarios,0
+main_scenarios,3
 scenario_variants,6
-actors,0
+actors,16
+trust_annotations,6
+autonomy_annotations,11
+explanation_pattern_annotations,5
 external_links,56

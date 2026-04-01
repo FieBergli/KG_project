@@ -1,8 +1,6 @@
 paper,similarity
-Paper1_TrustFactorsGame,0.651941
-Paper3_HybridMoralDecisionMaking,0.616944
-Paper8_ExplanationPatterns,0.593206
-Paper4_EEGTrustCalibration,0.593014
-Paper9_FaceMatchingDecisionSupport,0.544992
-Paper6_SocialAIHealthyLifestyle,0.514088
-Paper11_OncologicalRadiotherapy,0.509939
+Paper4_EEGTrustCalibration,0.659409
+Paper8_ExplanationPatterns,0.64441
+Paper1_TrustFactorsGame,0.599134
+Paper7_OrganDonationSimulation,0.539963
+Paper3_HybridMoralDecisionMaking,0.476016

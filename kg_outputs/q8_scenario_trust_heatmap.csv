@@ -1,0 +1,4 @@
+scenario,trustState,paperCount
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ChildEducationTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CalibratedTrust,2
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/HealthcareDiagnosisTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CalibratedTrust,5
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/HealthcareDiagnosisTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/OverTrust,1

@@ -1,0 +1,9 @@
+scenario,pattern,paperCount
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ChildEducationTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CounterfactualExplanationPattern,1
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ChildEducationTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/InteractiveExplanationPattern,2
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ChildEducationTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ProgressiveDisclosurePattern,1
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/HealthcareDiagnosisTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CounterfactualExplanationPattern,2
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/HealthcareDiagnosisTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/InteractiveExplanationPattern,1
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/HealthcareDiagnosisTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ProgressiveDisclosurePattern,1
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ResearchHITeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/CounterfactualExplanationPattern,1
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ResearchHITeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/InteractiveExplanationPattern,1

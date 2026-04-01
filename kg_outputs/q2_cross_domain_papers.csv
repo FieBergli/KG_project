@@ -1,6 +1,6 @@
-paper,scenarioCount
-http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper1_TrustFactorsGame,2
-http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper6_SocialAIHealthyLifestyle,2
-http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper8_ExplanationPatterns,2
-http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper10_BRIDGET,2
-http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper11_OncologicalRadiotherapy,2
+paper,scenarioCount,scenarios,autonomyLevels,patterns
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper10_BRIDGET,2,"HealthcareDiagnosisTeam, ChildEducationTeam",DynamicAutonomy,"Non-literal passes as string: NotBoundError(None), Non-literal passes as string: NotBoundError(None)"
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper11_OncologicalRadiotherapy,2,"ResearchHITeam, HealthcareDiagnosisTeam",DynamicAutonomy,CounterfactualExplanationPattern
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper1_TrustFactorsGame,2,"HealthcareDiagnosisTeam, ChildEducationTeam",DynamicAutonomy,"Non-literal passes as string: NotBoundError(None), Non-literal passes as string: NotBoundError(None)"
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper6_SocialAIHealthyLifestyle,2,"HealthcareDiagnosisTeam, ChildEducationTeam",DynamicAutonomy,CounterfactualExplanationPattern
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Paper8_ExplanationPatterns,2,"HealthcareDiagnosisTeam, ChildEducationTeam",HumanLedAutonomy,"ProgressiveDisclosurePattern, InteractiveExplanationPattern"

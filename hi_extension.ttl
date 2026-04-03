@@ -56,6 +56,12 @@ hi:ResearchCollaborationScenario a owl:Class ;
           owl:onProperty hi:hasInteraction ;
           owl:someValuesFrom hi:Interaction ] .
 
+hi:ArtificialAgent a owl:Class ;
+    rdfs:subClassOf hi:Actor .
+
+hi:Human a owl:Class ;
+    rdfs:subClassOf hi:Actor .
+
 hi:Patient a owl:Class ;
     rdfs:subClassOf hi:Human .
 
@@ -326,15 +332,7 @@ hi:TrustAwareDecisionSupport a hi:InformationProcessing ;
     hi:informationMethod hi:Statistical ;
     hi:processingTask hi:Reasoning .
 
-
-hi:Human rdfs:subClassOf foaf:Person .
-
-
-
-
-
-
-
+####################################################################################################################!!!!!!!!!!!!
 #################################################################
 # EXTERNAL LINKING LAYER
 # Added to improve schema/data integration with external KBs
@@ -398,27 +396,27 @@ hi:ResearchCollaborationScenario
 hi:Patient
     skos:exactMatch <http://dbpedia.org/resource/Patient> ;
     rdfs:seeAlso <https://www.wikidata.org/wiki/Q181600> ;
-    rdfs:subClassOf foaf:Person .
+    rdfs:subClassOf hi:Human .
 
 hi:MedicalProfessional
     skos:closeMatch <http://dbpedia.org/resource/Physician> ;
     rdfs:seeAlso <https://www.wikidata.org/wiki/Q39631> ;
-    rdfs:subClassOf foaf:Person .
+    rdfs:subClassOf hi:Human .
 
 hi:RemedialTeacher
     skos:closeMatch <http://dbpedia.org/resource/Special_education> ;
     rdfs:seeAlso <https://www.wikidata.org/wiki/Q37226> ;
-    rdfs:subClassOf foaf:Person .
+    rdfs:subClassOf hi:Human .
 
 hi:EducationalTherapist
     skos:closeMatch <http://dbpedia.org/resource/Educational_psychology> ;
     rdfs:seeAlso <https://www.wikidata.org/wiki/Q116690214> ;
-    rdfs:subClassOf foaf:Person .
+    rdfs:subClassOf hi:Human .
 
 hi:ResearchScientist
     skos:exactMatch <http://dbpedia.org/resource/Scientist> ;
     rdfs:seeAlso <https://www.wikidata.org/wiki/Q901> ;
-    rdfs:subClassOf foaf:Person .
+    rdfs:subClassOf hi:Human .
 
 hi:DecisionSupportSystem
     skos:exactMatch <http://dbpedia.org/resource/Decision_support_system> ;

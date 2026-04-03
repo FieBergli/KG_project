@@ -326,15 +326,8 @@ hi:TrustAwareDecisionSupport a hi:InformationProcessing ;
     hi:informationMethod hi:Statistical ;
     hi:processingTask hi:Reasoning .
 
-#################################################################
-# OPTIONAL EXTERNAL VOCABULARY LINKS FOR REUSE
-#################################################################
 
-hi:Patient rdfs:subClassOf foaf:Person .
-hi:MedicalProfessional rdfs:subClassOf foaf:Person .
-hi:RemedialTeacher rdfs:subClassOf foaf:Person .
-hi:EducationalTherapist rdfs:subClassOf foaf:Person .
-hi:ResearchScientist rdfs:subClassOf foaf:Person .
+hi:Human rdfs:subClassOf foaf:Person .
 
 
 
@@ -342,7 +335,6 @@ hi:ResearchScientist rdfs:subClassOf foaf:Person .
 
 
 
-####################################################################################################################!!!!!!!!!!!!
 #################################################################
 # EXTERNAL LINKING LAYER
 # Added to improve schema/data integration with external KBs

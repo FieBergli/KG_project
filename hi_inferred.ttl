@@ -1,0 +1,307 @@
+@prefix : <http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51#> .
+@prefix hi: <http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51> .
+
+<http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51> rdf:type owl:Ontology ;
+                                                                            owl:imports <file:/Users/fiebergli/Library/CloudStorage/OneDrive-VrijeUniversiteitAmsterdam/AI_master/P4/KnowledgeGraphs_and_SemanticTechnologies/KG_project/hi_extension.ttl> ,
+                                                                                        <file:/Users/fiebergli/Library/CloudStorage/OneDrive-VrijeUniversiteitAmsterdam/AI_master/P4/KnowledgeGraphs_and_SemanticTechnologies/KG_project/hi_instances.ttl> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/capability
+hi:capability rdf:type owl:ObjectProperty ;
+              rdfs:domain hi:Actor ;
+              rdfs:range hi:Capability .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/context
+hi:context rdf:type owl:ObjectProperty ;
+           rdfs:domain hi:Scenario ;
+           rdfs:range hi:Context .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/domain
+hi:domain rdf:type owl:ObjectProperty ;
+          rdfs:domain hi:Scenario ;
+          rdfs:range hi:Domain .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/endgoal
+hi:endgoal rdf:type owl:ObjectProperty ;
+           rdfs:domain hi:Scenario ;
+           rdfs:range hi:Endgoal .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/hasEthicalConsideration
+hi:hasEthicalConsideration rdf:type owl:ObjectProperty ;
+                           rdfs:domain hi:Scenario ;
+                           rdfs:range hi:EthicalConsideration .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/hasInteraction
+hi:hasInteraction rdf:type owl:ObjectProperty ;
+                  rdfs:domain hi:Scenario ;
+                  rdfs:range hi:Interaction .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/inScenario
+hi:inScenario rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain hi:Actor ;
+              rdfs:range hi:Scenario .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/informationMethod
+hi:informationMethod rdf:type owl:ObjectProperty ;
+                     rdfs:domain hi:InformationProcessing ;
+                     rdfs:range hi:ProcessingMethod .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/interactingAgent
+hi:interactingAgent rdf:type owl:ObjectProperty ;
+                    rdfs:domain hi:Interaction ;
+                    rdfs:range hi:Actor .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/interactionMethod
+hi:interactionMethod rdf:type owl:ObjectProperty ;
+                     rdfs:domain hi:Interaction ;
+                     rdfs:range hi:InteractionMethod .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/interactionTask
+hi:interactionTask rdf:type owl:ObjectProperty ;
+                   rdfs:domain hi:Interaction ;
+                   rdfs:range hi:InteractionTask .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/processingInformation
+hi:processingInformation rdf:type owl:ObjectProperty ;
+                         rdfs:domain hi:Actor ;
+                         rdfs:range hi:InformationProcessing .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/processingTask
+hi:processingTask rdf:type owl:ObjectProperty ;
+                  rdfs:domain hi:InformationProcessing ;
+                  rdfs:range hi:ProcessingTask .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Actor
+hi:Actor rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ArtificialAgent
+hi:ArtificialAgent rdf:type owl:Class ;
+                   rdfs:subClassOf hi:Actor .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Capability
+hi:Capability rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Context
+hi:Context rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Domain
+hi:Domain rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Endgoal
+hi:Endgoal rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/EthicalConsideration
+hi:EthicalConsideration rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Human
+hi:Human rdf:type owl:Class ;
+         rdfs:subClassOf hi:Actor .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/InformationProcessing
+hi:InformationProcessing rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Interaction
+hi:Interaction rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/InteractionMethod
+hi:InteractionMethod rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/InteractionTask
+hi:InteractionTask rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ProcessingMethod
+hi:ProcessingMethod rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ProcessingTask
+hi:ProcessingTask rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Scenario
+hi:Scenario rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Adaptiveness
+hi:Adaptiveness rdf:type owl:NamedIndividual ,
+                         hi:Capability .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Adult
+hi:Adult rdf:type owl:NamedIndividual ,
+                  hi:Human .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/BDI
+hi:BDI rdf:type owl:NamedIndividual ,
+                hi:Capability .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Child
+hi:Child rdf:type owl:NamedIndividual ,
+                  hi:Human .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Collaboration-based
+hi:Collaboration-based rdf:type owl:NamedIndividual ,
+                                hi:InteractionMethod .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Collaborativeness
+hi:Collaborativeness rdf:type owl:NamedIndividual ,
+                              hi:Capability .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Communication
+hi:Communication rdf:type owl:NamedIndividual ,
+                          hi:Capability .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Contribution-based
+hi:Contribution-based rdf:type owl:NamedIndividual ,
+                               hi:InteractionMethod .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Designer
+hi:Designer rdf:type owl:NamedIndividual ,
+                     hi:Human .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Explainability
+hi:Explainability rdf:type owl:NamedIndividual ,
+                           hi:InteractionTask .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Generating
+hi:Generating rdf:type owl:NamedIndividual ,
+                       hi:ProcessingTask .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Hybrid
+hi:Hybrid rdf:type owl:NamedIndividual ,
+                   hi:ProcessingMethod .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Intelligent_System
+hi:Intelligent_System rdf:type owl:NamedIndividual ,
+                               hi:ArtificialAgent .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Learning
+hi:Learning rdf:type owl:NamedIndividual ,
+                     hi:ProcessingTask .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Multimodal
+hi:Multimodal rdf:type owl:NamedIndividual ,
+                       hi:InteractionMethod .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Neuro-symbolic
+hi:Neuro-symbolic rdf:type owl:NamedIndividual ,
+                           hi:ProcessingMethod .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Non-cooperative
+hi:Non-cooperative rdf:type owl:NamedIndividual ,
+                            hi:InteractionMethod .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Question-Answering
+hi:Question-Answering rdf:type owl:NamedIndividual ,
+                               hi:InteractionTask .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Reasoning
+hi:Reasoning rdf:type owl:NamedIndividual ,
+                      hi:ProcessingTask .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Recommendation
+hi:Recommendation rdf:type owl:NamedIndividual ,
+                           hi:InteractionTask .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Responsibility
+hi:Responsibility rdf:type owl:NamedIndividual ,
+                           hi:Capability .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Robot
+hi:Robot rdf:type owl:NamedIndividual ,
+                  hi:ArtificialAgent .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Single-agent
+hi:Single-agent rdf:type owl:NamedIndividual ,
+                         hi:InteractionMethod .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Statistical
+hi:Statistical rdf:type owl:NamedIndividual ,
+                        hi:ProcessingMethod .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Symbolic
+hi:Symbolic rdf:type owl:NamedIndividual ,
+                     hi:ProcessingMethod .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Teacher
+hi:Teacher rdf:type owl:NamedIndividual ,
+                    hi:Human .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Transforming
+hi:Transforming rdf:type owl:NamedIndividual ,
+                         hi:ProcessingTask .
+
+
+###  http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/Transparency
+hi:Transparency rdf:type owl:NamedIndividual ,
+                         hi:Capability .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

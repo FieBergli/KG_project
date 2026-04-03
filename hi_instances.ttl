@@ -10,6 +10,151 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 #################################################################
+# INSTANCES FOR CONTROLLED VOCABULARY SUBCLASSES
+#################################################################
+
+# Trust state instances
+hi:calibratedTrustState a hi:CalibratedTrust, owl:NamedIndividual ;
+    rdfs:label "calibrated trust" .
+
+hi:underTrustState a hi:UnderTrust, owl:NamedIndividual ;
+    rdfs:label "under-trust" .
+
+hi:overTrustState a hi:OverTrust, owl:NamedIndividual ;
+    rdfs:label "over-trust" .
+
+# Autonomy level instances
+hi:humanLedAutonomyLevel a hi:HumanLedAutonomy, owl:NamedIndividual ;
+    rdfs:label "human-led autonomy" .
+
+hi:aiLedAutonomyLevel a hi:AILedAutonomy, owl:NamedIndividual ;
+    rdfs:label "AI-led autonomy" .
+
+hi:dynamicAutonomyLevel a hi:DynamicAutonomy, owl:NamedIndividual ;
+    rdfs:label "dynamic autonomy" .
+
+# Explanation pattern instances
+hi:progressiveDisclosurePatternInstance a hi:ProgressiveDisclosurePattern, owl:NamedIndividual ;
+    rdfs:label "progressive disclosure" .
+
+hi:interactiveExplanationPatternInstance a hi:InteractiveExplanationPattern, owl:NamedIndividual ;
+    rdfs:label "interactive explanation" .
+
+hi:counterfactualExplanationPatternInstance a hi:CounterfactualExplanationPattern, owl:NamedIndividual ;
+    rdfs:label "counterfactual explanation" .
+
+# Capability instances
+hi:trustCalibrationCapability a hi:TrustCalibration, owl:NamedIndividual ;
+    rdfs:label "trust calibration capability" .
+
+hi:personalizationCapability a hi:Personalization, owl:NamedIndividual ;
+    rdfs:label "personalization capability" .
+
+hi:humanOversightCapabilityInstance a hi:HumanOversightCapability, owl:NamedIndividual ;
+    rdfs:label "human oversight capability instance" .
+
+hi:sharedDecisionMakingCapability a hi:SharedDecisionMaking, owl:NamedIndividual ;
+    rdfs:label "shared decision making capability" .
+
+hi:evidenceRetrievalCapability a hi:EvidenceRetrieval, owl:NamedIndividual ;
+    rdfs:label "evidence retrieval capability" .
+
+hi:reflectiveInteractionCapability a hi:ReflectiveInteraction, owl:NamedIndividual ;
+    rdfs:label "reflective interaction capability" .
+
+hi:scientificValidationCapability a hi:ScientificValidation, owl:NamedIndividual ;
+    rdfs:label "scientific validation capability" .
+
+hi:gazeAwarenessCapability a hi:GazeAwareness, owl:NamedIndividual ;
+    rdfs:label "gaze awareness capability" .
+
+hi:explanationSupportCapabilityInstance a hi:ExplanationSupportCapability, owl:NamedIndividual ;
+    rdfs:label "explanation support capability instance" .
+
+# Domain instances
+hi:healthcareDomainInstance a hi:HealthcareDomain, owl:NamedIndividual ;
+    rdfs:label "healthcare" .
+
+hi:educationDomainInstance a hi:EducationDomain, owl:NamedIndividual ;
+    rdfs:label "education" .
+
+hi:researchDomainInstance a hi:ResearchDomain, owl:NamedIndividual ;
+    rdfs:label "scientific research" .
+
+hi:culturalHeritageDomainInstance a hi:CulturalHeritageDomain, owl:NamedIndividual ;
+    rdfs:label "cultural heritage" .
+
+hi:publicPolicyDomainInstance a hi:PublicPolicyDomain, owl:NamedIndividual ;
+    rdfs:label "public policy" .
+
+# Context instances
+hi:highStakesDecisionContextInstance a hi:HighStakesDecisionContext, owl:NamedIndividual ;
+    rdfs:label "high-stakes decision context" .
+
+hi:personalizedLearningContextInstance a hi:PersonalizedLearningContext, owl:NamedIndividual ;
+    rdfs:label "personalized learning context" .
+
+hi:researchWorkflowContextInstance a hi:ResearchWorkflowContext, owl:NamedIndividual ;
+    rdfs:label "research workflow context" .
+
+hi:immersiveInteractionContextInstance a hi:ImmersiveInteractionContext, owl:NamedIndividual ;
+    rdfs:label "immersive interaction context" .
+
+hi:publicHealthPolicyContextInstance a hi:PublicHealthPolicyContext, owl:NamedIndividual ;
+    rdfs:label "public health policy context" .
+
+# Endgoal instances
+hi:accurateDiagnosisGoal a hi:AccurateDiagnosis, owl:NamedIndividual ;
+    rdfs:label "accurate diagnosis" .
+
+hi:personalizedLearningImprovementGoal a hi:PersonalizedLearningImprovement, owl:NamedIndividual ;
+    rdfs:label "personalized learning improvement" .
+
+hi:robustResearchDiscoveryGoal a hi:RobustResearchDiscovery, owl:NamedIndividual ;
+    rdfs:label "robust research discovery" .
+
+# Ethical consideration instances
+hi:trustEthicInstance a hi:TrustEthic, owl:NamedIndividual ;
+    rdfs:label "trust" .
+
+hi:transparencyEthicInstance a hi:TransparencyEthic, owl:NamedIndividual ;
+    rdfs:label "transparency" .
+
+hi:privacyProtectionEthicInstance a hi:PrivacyProtection, owl:NamedIndividual ;
+    rdfs:label "privacy protection" .
+
+hi:fairnessEthicInstance a hi:FairnessEthic, owl:NamedIndividual ;
+    rdfs:label "fairness" .
+
+hi:safetyEthicInstance a hi:SafetyEthic, owl:NamedIndividual ;
+    rdfs:label "safety" .
+
+hi:humanOversightEthicInstance a hi:HumanOversightEthic, owl:NamedIndividual ;
+    rdfs:label "human oversight" .
+
+# Information processing instances
+hi:similaritySearchAndAnalysisProcess a hi:SimilaritySearchAndAnalysis, owl:NamedIndividual ;
+    rdfs:label "similarity search and analysis" ;
+    hi:informationMethod hi:Hybrid ;
+    hi:processingTask hi:Reasoning , hi:Learning .
+
+hi:adaptiveLearningAnalyticsProcess a hi:AdaptiveLearningAnalytics, owl:NamedIndividual ;
+    rdfs:label "adaptive learning analytics" ;
+    hi:informationMethod hi:Hybrid ;
+    hi:processingTask hi:Learning , hi:Reasoning .
+
+hi:literatureSynthesisPipelineProcess a hi:LiteratureSynthesisPipeline, owl:NamedIndividual ;
+    rdfs:label "literature synthesis pipeline" ;
+    hi:informationMethod hi:Neuro-symbolic ;
+    hi:processingTask hi:Reasoning , hi:Generating .
+
+hi:trustAwareDecisionSupportProcess a hi:TrustAwareDecisionSupport, owl:NamedIndividual ;
+    rdfs:label "trust-aware decision support" ;
+    hi:informationMethod hi:Statistical ;
+    hi:processingTask hi:Reasoning .
+
+
+#################################################################
 # ACTORS
 #################################################################
 
@@ -20,26 +165,26 @@ hi:Susan a hi:Patient ;
 
 hi:PrimaryCaregiver a hi:MedicalProfessional ;
     foaf:name "Primary caregiver" ;
-    hi:capability hi:Communication , hi:Responsibility , hi:SharedDecisionMaking ;
+    hi:capability hi:Communication , hi:Responsibility , hi:sharedDecisionMakingCapability ;
     hi:inScenario hi:HealthcareDiagnosisTeam ;
     hi:collaboratesWith hi:DiagnosisAISystem , hi:SpecialistA , hi:SpecialistB .
 
 hi:SpecialistA a hi:MedicalProfessional ;
     foaf:name "Specialist A" ;
-    hi:capability hi:Responsibility , hi:ScientificValidation ;
+    hi:capability hi:Responsibility , hi:scientificValidationCapability ;
     hi:inScenario hi:HealthcareDiagnosisTeam ;
     hi:collaboratesWith hi:DiagnosisAISystem .
 
 hi:SpecialistB a hi:MedicalProfessional ;
     foaf:name "Specialist B" ;
-    hi:capability hi:Responsibility , hi:ScientificValidation ;
+    hi:capability hi:Responsibility , hi:scientificValidationCapability ;
     hi:inScenario hi:HealthcareDiagnosisTeam ;
     hi:collaboratesWith hi:DiagnosisAISystem .
 
 hi:DiagnosisAISystem a hi:DecisionSupportSystem ;
     rdfs:label "AI search and analysis system" ;
-    hi:capability hi:EvidenceRetrieval , hi:Transparency , hi:HumanOversightCapability , hi:TrustCalibration ;
-    hi:processingInformation hi:SimilaritySearchAndAnalysis , hi:TrustAwareDecisionSupport ;
+    hi:capability hi:evidenceRetrievalCapability , hi:Transparency , hi:humanOversightCapabilityInstance , hi:trustCalibrationCapability ;
+    hi:processingInformation hi:similaritySearchAndAnalysisProcess , hi:trustAwareDecisionSupportProcess ;
     hi:inScenario hi:HealthcareDiagnosisTeam .
 
 # Education scenario actors
@@ -51,7 +196,7 @@ hi:Marie a hi:RemedialTeacher ;
 
 hi:John a hi:EducationalTherapist ;
     foaf:name "John" ;
-    hi:capability hi:Communication , hi:ReflectiveInteraction ;
+    hi:capability hi:Communication , hi:reflectiveInteractionCapability ;
     hi:inScenario hi:ChildEducationTeam ;
     hi:collaboratesWith hi:Marie , hi:MIKE , hi:Alex .
 
@@ -63,21 +208,21 @@ hi:Alex a hi:Human ;
 
 hi:MIKE a hi:AssistiveRobotSystem ;
     foaf:name "MIKE" ;
-    hi:capability hi:Personalization , hi:GazeAwareness , hi:Adaptiveness , hi:Communication ;
-    hi:processingInformation hi:AdaptiveLearningAnalytics ;
+    hi:capability hi:personalizationCapability , hi:gazeAwarenessCapability , hi:Adaptiveness , hi:Communication ;
+    hi:processingInformation hi:adaptiveLearningAnalyticsProcess ;
     hi:inScenario hi:ChildEducationTeam .
 
 # Research scenario actors
 hi:LeadScientist a hi:ResearchScientist ;
     foaf:name "Lead scientist" ;
-    hi:capability hi:ScientificValidation , hi:Transparency , hi:Responsibility ;
+    hi:capability hi:scientificValidationCapability , hi:Transparency , hi:Responsibility ;
     hi:inScenario hi:ResearchHITeam ;
     hi:collaboratesWith hi:ResearchAISystem .
 
 hi:ResearchAISystem a hi:LiteratureAnalysisSystem ;
     rdfs:label "research literature and data analysis system" ;
-    hi:capability hi:EvidenceRetrieval , hi:ExplanationSupportCapability , hi:ScientificValidation , hi:HumanOversightCapability ;
-    hi:processingInformation hi:LiteratureSynthesisPipeline ;
+    hi:capability hi:evidenceRetrievalCapability , hi:explanationSupportCapabilityInstance , hi:scientificValidationCapability , hi:humanOversightCapabilityInstance ;
+    hi:processingInformation hi:literatureSynthesisPipelineProcess ;
     hi:inScenario hi:ResearchHITeam .
 
 #################################################################
@@ -105,128 +250,128 @@ hi:ResearchInteraction a hi:Interaction ;
 
 hi:HealthcareDiagnosisTeam a hi:HealthcareDecisionScenario ;
     rdfs:label "T3 Healthcare Diagnosis Team" ;
-    hi:domain hi:HealthcareDomain ;
-    hi:context hi:HighStakesDecisionContext ;
-    hi:endgoal hi:AccurateDiagnosis ;
-    hi:hasEthicalConsideration hi:TrustEthic , hi:TransparencyEthic , hi:HumanOversightEthic , hi:SafetyEthic ;
+    hi:domain hi:healthcareDomainInstance ;
+    hi:context hi:highStakesDecisionContextInstance ;
+    hi:endgoal hi:accurateDiagnosisGoal ;
+    hi:hasEthicalConsideration hi:trustEthicInstance , hi:transparencyEthicInstance , hi:humanOversightEthicInstance , hi:safetyEthicInstance ;
     hi:hasInteraction hi:HealthcareInteraction ;
     hi:involvesActor hi:Susan , hi:PrimaryCaregiver , hi:SpecialistA , hi:SpecialistB , hi:DiagnosisAISystem ;
     hi:hasScenarioVariant hi:HealthcareDiagnosisBestCase , hi:HealthcareDiagnosisWorstCase ;
-    hi:hasAutonomyLevel hi:DynamicAutonomy ;
-    hi:hasTrustState hi:CalibratedTrust ;
-    hi:usesExplanationPattern hi:InteractiveExplanationPattern ;
+    hi:hasAutonomyLevel hi:dynamicAutonomyLevel ;
+    hi:hasTrustState hi:calibratedTrustState ;
+    hi:usesExplanationPattern hi:interactiveExplanationPatternInstance ;
     hi:scenarioNote "Medical professionals collaborate with an AI search and analysis system to identify difficult diagnoses while maintaining human oversight." .
 
 hi:HealthcareDiagnosisBestCase a hi:ScenarioVariant ;
     rdfs:label "Healthcare diagnosis best case" ;
     hi:variantOfScenario hi:HealthcareDiagnosisTeam ;
-    hi:domain hi:HealthcareDomain ;
-    hi:context hi:HighStakesDecisionContext ;
-    hi:endgoal hi:AccurateDiagnosis ;
-    hi:hasEthicalConsideration hi:TrustEthic , hi:TransparencyEthic , hi:HumanOversightEthic ;
+    hi:domain hi:healthcareDomainInstance ;
+    hi:context hi:highStakesDecisionContextInstance ;
+    hi:endgoal hi:accurateDiagnosisGoal ;
+    hi:hasEthicalConsideration hi:trustEthicInstance , hi:transparencyEthicInstance , hi:humanOversightEthicInstance ;
     hi:hasInteraction hi:HealthcareInteraction ;
     hi:involvesActor hi:Susan , hi:PrimaryCaregiver , hi:SpecialistA , hi:SpecialistB , hi:DiagnosisAISystem ;
-    hi:hasAutonomyLevel hi:DynamicAutonomy ;
-    hi:hasTrustState hi:CalibratedTrust ;
-    hi:usesExplanationPattern hi:InteractiveExplanationPattern ;
+    hi:hasAutonomyLevel hi:dynamicAutonomyLevel ;
+    hi:hasTrustState hi:calibratedTrustState ;
+    hi:usesExplanationPattern hi:interactiveExplanationPatternInstance ;
     hi:scenarioNote "The team understands each other's expertise and the AI limitations, which leads to correct diagnosis." .
 
 hi:HealthcareDiagnosisWorstCase a hi:ScenarioVariant ;
     rdfs:label "Healthcare diagnosis worst case" ;
     hi:variantOfScenario hi:HealthcareDiagnosisTeam ;
-    hi:domain hi:HealthcareDomain ;
-    hi:context hi:HighStakesDecisionContext ;
-    hi:endgoal hi:AccurateDiagnosis ;
-    hi:hasEthicalConsideration hi:TrustEthic , hi:SafetyEthic ;
+    hi:domain hi:healthcareDomainInstance ;
+    hi:context hi:highStakesDecisionContextInstance ;
+    hi:endgoal hi:accurateDiagnosisGoal ;
+    hi:hasEthicalConsideration hi:trustEthicInstance , hi:safetyEthicInstance ;
     hi:hasInteraction hi:HealthcareInteraction ;
     hi:involvesActor hi:Susan , hi:PrimaryCaregiver , hi:SpecialistA , hi:SpecialistB , hi:DiagnosisAISystem ;
-    hi:hasAutonomyLevel hi:AILedAutonomy ;
-    hi:hasTrustState hi:OverTrust ;
-    hi:usesExplanationPattern hi:InteractiveExplanationPattern ;
+    hi:hasAutonomyLevel hi:aiLedAutonomyLevel ;
+    hi:hasTrustState hi:overTrustState ;
+    hi:usesExplanationPattern hi:interactiveExplanationPatternInstance ;
     hi:scenarioNote "Lack of knowledge sharing and poor calibration of trust in the AI lead to misdiagnosis and loss of trust." .
 
 hi:ChildEducationTeam a hi:EducationSupportScenario ;
     rdfs:label "T2 Child Education Team" ;
-    hi:domain hi:EducationDomain ;
-    hi:context hi:PersonalizedLearningContext ;
-    hi:endgoal hi:PersonalizedLearningImprovement ;
-    hi:hasEthicalConsideration hi:TrustEthic , hi:FairnessEthic , hi:HumanOversightEthic ;
+    hi:domain hi:educationDomainInstance ;
+    hi:context hi:personalizedLearningContextInstance ;
+    hi:endgoal hi:personalizedLearningImprovementGoal ;
+    hi:hasEthicalConsideration hi:trustEthicInstance , hi:fairnessEthicInstance , hi:humanOversightEthicInstance ;
     hi:hasInteraction hi:EducationInteraction ;
     hi:involvesActor hi:Marie , hi:John , hi:Alex , hi:MIKE ;
     hi:hasScenarioVariant hi:ChildEducationBestCase , hi:ChildEducationWorstCase ;
-    hi:hasAutonomyLevel hi:DynamicAutonomy ;
-    hi:hasTrustState hi:CalibratedTrust ;
-    hi:usesExplanationPattern hi:ProgressiveDisclosurePattern ;
+    hi:hasAutonomyLevel hi:dynamicAutonomyLevel ;
+    hi:hasTrustState hi:calibratedTrustState ;
+    hi:usesExplanationPattern hi:progressiveDisclosurePatternInstance ;
     hi:scenarioNote "Teacher, therapist, child, and assistive robot co-design and adapt a personalized learning program." .
 
 hi:ChildEducationBestCase a hi:ScenarioVariant ;
     rdfs:label "Child education best case" ;
     hi:variantOfScenario hi:ChildEducationTeam ;
-    hi:domain hi:EducationDomain ;
-    hi:context hi:PersonalizedLearningContext ;
-    hi:endgoal hi:PersonalizedLearningImprovement ;
-    hi:hasEthicalConsideration hi:TrustEthic , hi:FairnessEthic , hi:HumanOversightEthic ;
+    hi:domain hi:educationDomainInstance ;
+    hi:context hi:personalizedLearningContextInstance ;
+    hi:endgoal hi:personalizedLearningImprovementGoal ;
+    hi:hasEthicalConsideration hi:trustEthicInstance , hi:fairnessEthicInstance , hi:humanOversightEthicInstance ;
     hi:hasInteraction hi:EducationInteraction ;
     hi:involvesActor hi:Marie , hi:John , hi:Alex , hi:MIKE ;
-    hi:hasAutonomyLevel hi:DynamicAutonomy ;
-    hi:hasTrustState hi:CalibratedTrust ;
-    hi:usesExplanationPattern hi:ProgressiveDisclosurePattern ;
+    hi:hasAutonomyLevel hi:dynamicAutonomyLevel ;
+    hi:hasTrustState hi:calibratedTrustState ;
+    hi:usesExplanationPattern hi:progressiveDisclosurePatternInstance ;
     hi:scenarioNote "The robot provides useful feedback and the humans continuously refine the curriculum, improving Alex's confidence and performance." .
 
 hi:ChildEducationWorstCase a hi:ScenarioVariant ;
     rdfs:label "Child education worst case" ;
     hi:variantOfScenario hi:ChildEducationTeam ;
-    hi:domain hi:EducationDomain ;
-    hi:context hi:PersonalizedLearningContext ;
-    hi:endgoal hi:PersonalizedLearningImprovement ;
-    hi:hasEthicalConsideration hi:FairnessEthic ;
+    hi:domain hi:educationDomainInstance ;
+    hi:context hi:personalizedLearningContextInstance ;
+    hi:endgoal hi:personalizedLearningImprovementGoal ;
+    hi:hasEthicalConsideration hi:fairnessEthicInstance ;
     hi:hasInteraction hi:EducationInteraction ;
     hi:involvesActor hi:Marie , hi:John , hi:Alex , hi:MIKE ;
-    hi:hasAutonomyLevel hi:AILedAutonomy ;
-    hi:hasTrustState hi:UnderTrust ;
-    hi:usesExplanationPattern hi:ProgressiveDisclosurePattern ;
+    hi:hasAutonomyLevel hi:aiLedAutonomyLevel ;
+    hi:hasTrustState hi:underTrustState ;
+    hi:usesExplanationPattern hi:progressiveDisclosurePatternInstance ;
     hi:scenarioNote "Poor coordination or poor robot adaptation reduces learning effectiveness and child engagement." .
 
 hi:ResearchHITeam a hi:ResearchCollaborationScenario ;
     rdfs:label "T1 Research HI Team" ;
-    hi:domain hi:ResearchDomain ;
-    hi:context hi:ResearchWorkflowContext ;
-    hi:endgoal hi:RobustResearchDiscovery ;
-    hi:hasEthicalConsideration hi:TransparencyEthic , hi:TrustEthic , hi:HumanOversightEthic ;
+    hi:domain hi:researchDomainInstance ;
+    hi:context hi:researchWorkflowContextInstance ;
+    hi:endgoal hi:robustResearchDiscoveryGoal ;
+    hi:hasEthicalConsideration hi:transparencyEthicInstance , hi:trustEthicInstance , hi:humanOversightEthicInstance ;
     hi:hasInteraction hi:ResearchInteraction ;
     hi:involvesActor hi:LeadScientist , hi:ResearchAISystem ;
     hi:hasScenarioVariant hi:ResearchHIBestCase , hi:ResearchHIWorstCase ;
-    hi:hasAutonomyLevel hi:DynamicAutonomy ;
-    hi:hasTrustState hi:CalibratedTrust ;
-    hi:usesExplanationPattern hi:CounterfactualExplanationPattern ;
+    hi:hasAutonomyLevel hi:dynamicAutonomyLevel ;
+    hi:hasTrustState hi:calibratedTrustState ;
+    hi:usesExplanationPattern hi:counterfactualExplanationPatternInstance ;
     hi:scenarioNote "A scientist and an AI system collaborate on literature analysis, data synthesis, and validation in a research pipeline." .
 
 hi:ResearchHIBestCase a hi:ScenarioVariant ;
     rdfs:label "Research HI team best case" ;
     hi:variantOfScenario hi:ResearchHITeam ;
-    hi:domain hi:ResearchDomain ;
-    hi:context hi:ResearchWorkflowContext ;
-    hi:endgoal hi:RobustResearchDiscovery ;
-    hi:hasEthicalConsideration hi:TransparencyEthic , hi:TrustEthic ;
+    hi:domain hi:researchDomainInstance ;
+    hi:context hi:researchWorkflowContextInstance ;
+    hi:endgoal hi:robustResearchDiscoveryGoal ;
+    hi:hasEthicalConsideration hi:transparencyEthicInstance , hi:trustEthicInstance ;
     hi:hasInteraction hi:ResearchInteraction ;
     hi:involvesActor hi:LeadScientist , hi:ResearchAISystem ;
-    hi:hasAutonomyLevel hi:DynamicAutonomy ;
-    hi:hasTrustState hi:CalibratedTrust ;
-    hi:usesExplanationPattern hi:CounterfactualExplanationPattern ;
+    hi:hasAutonomyLevel hi:dynamicAutonomyLevel ;
+    hi:hasTrustState hi:calibratedTrustState ;
+    hi:usesExplanationPattern hi:counterfactualExplanationPatternInstance ;
     hi:scenarioNote "The AI reviews methods and evidence, while the human scientists validate and contextualize the outputs." .
 
 hi:ResearchHIWorstCase a hi:ScenarioVariant ;
     rdfs:label "Research HI team worst case" ;
     hi:variantOfScenario hi:ResearchHITeam ;
-    hi:domain hi:ResearchDomain ;
-    hi:context hi:ResearchWorkflowContext ;
-    hi:endgoal hi:RobustResearchDiscovery ;
-    hi:hasEthicalConsideration hi:TransparencyEthic ;
+    hi:domain hi:researchDomainInstance ;
+    hi:context hi:researchWorkflowContextInstance ;
+    hi:endgoal hi:robustResearchDiscoveryGoal ;
+    hi:hasEthicalConsideration hi:transparencyEthicInstance ;
     hi:hasInteraction hi:ResearchInteraction ;
     hi:involvesActor hi:LeadScientist , hi:ResearchAISystem ;
-    hi:hasAutonomyLevel hi:AILedAutonomy ;
-    hi:hasTrustState hi:OverTrust ;
-    hi:usesExplanationPattern hi:CounterfactualExplanationPattern ;
+    hi:hasAutonomyLevel hi:aiLedAutonomyLevel ;
+    hi:hasTrustState hi:overTrustState ;
+    hi:usesExplanationPattern hi:counterfactualExplanationPatternInstance ;
     hi:scenarioNote "Researchers over-rely on flawed or outdated AI-generated evidence and fail to cross-check it." .
 
 #################################################################
@@ -241,8 +386,8 @@ hi:Paper1_TrustFactorsGame a hi:ResearchPaper, bibo:AcademicArticle ;
     dcterms:subject <https://dbpedia.org/resource/Reinforcement_learning> ,
         <https://dbpedia.org/resource/Trust_(social_sciences)> ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam , hi:ChildEducationTeam ;
-    hi:hasAutonomyLevel hi:DynamicAutonomy ;
-    hi:hasTrustState hi:CalibratedTrust ;
+    hi:hasAutonomyLevel hi:dynamicAutonomyLevel ;
+    hi:hasTrustState hi:calibratedTrustState ;
     hi:paperNote "Trust-aware task delegation and collaboration." .
 
 hi:Paper2_GazeAwarenessVR a hi:ResearchPaper, bibo:AcademicArticle ;
@@ -254,8 +399,8 @@ hi:Paper2_GazeAwarenessVR a hi:ResearchPaper, bibo:AcademicArticle ;
         <https://dbpedia.org/resource/Virtual_reality> ,
         <https://dbpedia.org/resource/Cultural_heritage> ;
     hi:relevantToScenario hi:ChildEducationTeam ;
-    hi:hasAutonomyLevel hi:HumanLedAutonomy ;
-    hi:usesExplanationPattern hi:InteractiveExplanationPattern ;
+    hi:hasAutonomyLevel hi:humanLedAutonomyLevel ;
+    hi:usesExplanationPattern hi:interactiveExplanationPatternInstance ;
     hi:paperNote "Gaze-aware personalization and collaboration." .
 
 hi:Paper3_HybridMoralDecisionMaking a hi:ResearchPaper, bibo:AcademicArticle ;
@@ -266,8 +411,8 @@ hi:Paper3_HybridMoralDecisionMaking a hi:ResearchPaper, bibo:AcademicArticle ;
     dcterms:subject <https://dbpedia.org/resource/Morality> ,
         <https://dbpedia.org/resource/Large_language_model> ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam ;
-    hi:hasAutonomyLevel hi:HumanLedAutonomy ;
-    hi:hasTrustState hi:CalibratedTrust ;
+    hi:hasAutonomyLevel hi:humanLedAutonomyLevel ;
+    hi:hasTrustState hi:calibratedTrustState ;
     hi:paperNote "Human-LLM moral alignment and disagreement." .
 
 hi:Paper4_EEGTrustCalibration a hi:ResearchPaper, bibo:AcademicArticle ;
@@ -278,8 +423,8 @@ hi:Paper4_EEGTrustCalibration a hi:ResearchPaper, bibo:AcademicArticle ;
     dcterms:subject <https://dbpedia.org/resource/Electroencephalography> ,
         <https://dbpedia.org/resource/Decision_support_system> ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam ;
-    hi:hasAutonomyLevel hi:DynamicAutonomy ;
-    hi:hasTrustState hi:CalibratedTrust ;
+    hi:hasAutonomyLevel hi:dynamicAutonomyLevel ;
+    hi:hasTrustState hi:calibratedTrustState ;
     hi:paperNote "EEG-based detection of calibrated trust, under-trust and over-trust." .
 
 hi:Paper5_PastEnvironments a hi:ResearchPaper, bibo:AcademicArticle ;
@@ -291,8 +436,8 @@ hi:Paper5_PastEnvironments a hi:ResearchPaper, bibo:AcademicArticle ;
         <https://dbpedia.org/resource/Machine_learning> ,
         <https://dbpedia.org/resource/Cultural_heritage> ;
     hi:relevantToScenario hi:ResearchHITeam ;
-    hi:hasAutonomyLevel hi:DynamicAutonomy ;
-    hi:usesExplanationPattern hi:InteractiveExplanationPattern ;
+    hi:hasAutonomyLevel hi:dynamicAutonomyLevel ;
+    hi:usesExplanationPattern hi:interactiveExplanationPatternInstance ;
     hi:paperNote "Human-in-the-loop predictive and generative modeling for archaeology." .
 
 hi:Paper6_SocialAIHealthyLifestyle a hi:ResearchPaper, bibo:AcademicArticle ;
@@ -303,8 +448,8 @@ hi:Paper6_SocialAIHealthyLifestyle a hi:ResearchPaper, bibo:AcademicArticle ;
     dcterms:subject <https://dbpedia.org/resource/Health_care> ,
         <https://dbpedia.org/resource/Decision_support_system> ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam , hi:ChildEducationTeam ;
-    hi:hasAutonomyLevel hi:DynamicAutonomy ;
-    hi:usesExplanationPattern hi:CounterfactualExplanationPattern ;
+    hi:hasAutonomyLevel hi:dynamicAutonomyLevel ;
+    hi:usesExplanationPattern hi:counterfactualExplanationPatternInstance ;
     hi:paperNote "Social competencies, responsible explanations, reflection and support networks." .
 
 hi:Paper7_OrganDonationSimulation a hi:ResearchPaper, bibo:AcademicArticle ;
@@ -316,8 +461,8 @@ hi:Paper7_OrganDonationSimulation a hi:ResearchPaper, bibo:AcademicArticle ;
         <https://dbpedia.org/resource/Organ_donation> ,
         <https://dbpedia.org/resource/Agent-based_model> ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam ;
-    hi:hasAutonomyLevel hi:HumanLedAutonomy ;
-    hi:hasTrustState hi:CalibratedTrust ;
+    hi:hasAutonomyLevel hi:humanLedAutonomyLevel ;
+    hi:hasTrustState hi:calibratedTrustState ;
     hi:paperNote "Simulation as a safe policy exploration and public understanding tool." .
 
 hi:Paper8_ExplanationPatterns a hi:ResearchPaper, bibo:AcademicArticle ;
@@ -328,8 +473,8 @@ hi:Paper8_ExplanationPatterns a hi:ResearchPaper, bibo:AcademicArticle ;
     dcterms:subject <https://dbpedia.org/resource/Explainable_artificial_intelligence> ,
         <https://dbpedia.org/resource/Human%E2%80%93computer_interaction> ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam , hi:ChildEducationTeam ;
-    hi:hasAutonomyLevel hi:HumanLedAutonomy ;
-    hi:usesExplanationPattern hi:ProgressiveDisclosurePattern , hi:InteractiveExplanationPattern ;
+    hi:hasAutonomyLevel hi:humanLedAutonomyLevel ;
+    hi:usesExplanationPattern hi:progressiveDisclosurePatternInstance , hi:interactiveExplanationPatternInstance ;
     hi:paperNote "Explanation stream patterns for decision support." .
 
 hi:Paper9_FaceMatchingDecisionSupport a hi:ResearchPaper, bibo:AcademicArticle ;
@@ -340,8 +485,8 @@ hi:Paper9_FaceMatchingDecisionSupport a hi:ResearchPaper, bibo:AcademicArticle ;
     dcterms:subject <https://dbpedia.org/resource/Decision_support_system> ,
         <https://dbpedia.org/resource/Facial_recognition_system> ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam ;
-    hi:hasAutonomyLevel hi:DynamicAutonomy ;
-    hi:hasTrustState hi:OverTrust ;
+    hi:hasAutonomyLevel hi:dynamicAutonomyLevel ;
+    hi:hasTrustState hi:overTrustState ;
     hi:paperNote "Task difficulty and perceived system quality shape human reliance." .
 
 hi:Paper10_BRIDGET a hi:ResearchPaper, bibo:AcademicArticle ;
@@ -352,8 +497,8 @@ hi:Paper10_BRIDGET a hi:ResearchPaper, bibo:AcademicArticle ;
     dcterms:subject <https://dbpedia.org/resource/Human-in-the-loop> ,
         <https://dbpedia.org/resource/Explainable_artificial_intelligence> ;
     hi:relevantToScenario hi:HealthcareDiagnosisTeam , hi:ChildEducationTeam ;
-    hi:hasAutonomyLevel hi:DynamicAutonomy ;
-    hi:hasTrustState hi:CalibratedTrust ;
+    hi:hasAutonomyLevel hi:dynamicAutonomyLevel ;
+    hi:hasTrustState hi:calibratedTrustState ;
     hi:paperNote "Dynamic switching between human-led and machine-led decision statuses." .
 
 hi:Paper11_OncologicalRadiotherapy a hi:ResearchPaper, bibo:AcademicArticle ;
@@ -365,8 +510,8 @@ hi:Paper11_OncologicalRadiotherapy a hi:ResearchPaper, bibo:AcademicArticle ;
         <https://dbpedia.org/resource/Medical_imaging> ,
         <https://dbpedia.org/resource/Artificial_intelligence> ;
     hi:relevantToScenario hi:ResearchHITeam , hi:HealthcareDiagnosisTeam ;
-    hi:hasAutonomyLevel hi:DynamicAutonomy ;
-    hi:usesExplanationPattern hi:CounterfactualExplanationPattern ;
+    hi:hasAutonomyLevel hi:dynamicAutonomyLevel ;
+    hi:usesExplanationPattern hi:counterfactualExplanationPatternInstance ;
     hi:paperNote "Human-AI workflow for preclinical radiotherapy research and validation." .
 
 #################################################################

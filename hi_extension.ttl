@@ -177,160 +177,197 @@ hi:paperNote a owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 #################################################################
-# CONTROLLED VOCABULARY INDIVIDUALS
+# CONTROLLED VOCABULARY CLASSES
 #################################################################
 
-# Trust states
-hi:CalibratedTrust a hi:TrustState ;
+# Trust state subclasses
+hi:CalibratedTrust a owl:Class ;
+    rdfs:subClassOf hi:TrustState ;
     rdfs:label "calibrated trust" ;
     skos:closeMatch <https://dbpedia.org/resource/Trust_(social_sciences)> .
 
-hi:UnderTrust a hi:TrustState ;
+hi:UnderTrust a owl:Class ;
+    rdfs:subClassOf hi:TrustState ;
     rdfs:label "under-trust" .
 
-hi:OverTrust a hi:TrustState ;
+hi:OverTrust a owl:Class ;
+    rdfs:subClassOf hi:TrustState ;
     rdfs:label "over-trust" .
 
-# Autonomy levels
-hi:HumanLedAutonomy a hi:AutonomyLevel ;
+# Autonomy level subclasses
+hi:HumanLedAutonomy a owl:Class ;
+    rdfs:subClassOf hi:AutonomyLevel ;
     rdfs:label "human-led autonomy" .
 
-hi:AILedAutonomy a hi:AutonomyLevel ;
+hi:AILedAutonomy a owl:Class ;
+    rdfs:subClassOf hi:AutonomyLevel ;
     rdfs:label "AI-led autonomy" .
 
-hi:DynamicAutonomy a hi:AutonomyLevel ;
+hi:DynamicAutonomy a owl:Class ;
+    rdfs:subClassOf hi:AutonomyLevel ;
     rdfs:label "dynamic autonomy" ;
     skos:closeMatch <https://dbpedia.org/resource/Autonomous_system> .
 
-# Explanation patterns
-hi:ProgressiveDisclosurePattern a hi:ExplanationPattern ;
+# Explanation pattern subclasses
+hi:ProgressiveDisclosurePattern a owl:Class ;
+    rdfs:subClassOf hi:ExplanationPattern ;
     rdfs:label "progressive disclosure" .
 
-hi:InteractiveExplanationPattern a hi:ExplanationPattern ;
+hi:InteractiveExplanationPattern a owl:Class ;
+    rdfs:subClassOf hi:ExplanationPattern ;
     rdfs:label "interactive explanation" ;
     skos:closeMatch <https://dbpedia.org/resource/Explainable_artificial_intelligence> .
 
-hi:CounterfactualExplanationPattern a hi:ExplanationPattern ;
+hi:CounterfactualExplanationPattern a owl:Class ;
+    rdfs:subClassOf hi:ExplanationPattern ;
     rdfs:label "counterfactual explanation" .
 
-# New capabilities
-hi:TrustCalibration a hi:Capability, owl:NamedIndividual ;
+# Capability subclasses
+hi:TrustCalibration a owl:Class ;
+    rdfs:subClassOf hi:Capability ;
     rdfs:label "trust calibration" ;
     skos:closeMatch <https://dbpedia.org/resource/Trust_(social_sciences)> .
 
-hi:Personalization a hi:Capability, owl:NamedIndividual ;
+hi:Personalization a owl:Class ;
+    rdfs:subClassOf hi:Capability ;
     rdfs:label "personalization" .
 
-hi:HumanOversightCapability a hi:Capability, owl:NamedIndividual ;
+hi:HumanOversightCapability a owl:Class ;
+    rdfs:subClassOf hi:Capability ;
     rdfs:label "human oversight capability" .
 
-hi:SharedDecisionMaking a hi:Capability, owl:NamedIndividual ;
+hi:SharedDecisionMaking a owl:Class ;
+    rdfs:subClassOf hi:Capability ;
     rdfs:label "shared decision making" .
 
-hi:EvidenceRetrieval a hi:Capability, owl:NamedIndividual ;
+hi:EvidenceRetrieval a owl:Class ;
+    rdfs:subClassOf hi:Capability ;
     rdfs:label "evidence retrieval" .
 
-hi:ReflectiveInteraction a hi:Capability, owl:NamedIndividual ;
+hi:ReflectiveInteraction a owl:Class ;
+    rdfs:subClassOf hi:Capability ;
     rdfs:label "reflective interaction" .
 
-hi:ScientificValidation a hi:Capability, owl:NamedIndividual ;
+hi:ScientificValidation a owl:Class ;
+    rdfs:subClassOf hi:Capability ;
     rdfs:label "scientific validation" .
 
-hi:GazeAwareness a hi:Capability, owl:NamedIndividual ;
+hi:GazeAwareness a owl:Class ;
+    rdfs:subClassOf hi:Capability ;
     rdfs:label "gaze awareness" ;
     skos:closeMatch <https://dbpedia.org/resource/Eye_tracking> .
 
-hi:ExplanationSupportCapability a hi:Capability, owl:NamedIndividual ;
+hi:ExplanationSupportCapability a owl:Class ;
+    rdfs:subClassOf hi:Capability ;
     rdfs:label "explanation support" .
 
-# Domains
-hi:HealthcareDomain a hi:Domain, owl:NamedIndividual ;
+# Domain subclasses
+hi:HealthcareDomain a owl:Class ;
+    rdfs:subClassOf hi:Domain ;
     rdfs:label "healthcare" ;
     skos:exactMatch <https://dbpedia.org/resource/Health_care> .
 
-hi:EducationDomain a hi:Domain, owl:NamedIndividual ;
+hi:EducationDomain a owl:Class ;
+    rdfs:subClassOf hi:Domain ;
     rdfs:label "education" ;
     skos:exactMatch <https://dbpedia.org/resource/Education> .
 
-hi:ResearchDomain a hi:Domain, owl:NamedIndividual ;
+hi:ResearchDomain a owl:Class ;
+    rdfs:subClassOf hi:Domain ;
     rdfs:label "scientific research" ;
     skos:exactMatch <https://dbpedia.org/resource/Scientific_method> .
 
-hi:CulturalHeritageDomain a hi:Domain, owl:NamedIndividual ;
+hi:CulturalHeritageDomain a owl:Class ;
+    rdfs:subClassOf hi:Domain ;
     rdfs:label "cultural heritage" ;
     skos:exactMatch <https://dbpedia.org/resource/Cultural_heritage> .
 
-hi:PublicPolicyDomain a hi:Domain, owl:NamedIndividual ;
+hi:PublicPolicyDomain a owl:Class ;
+    rdfs:subClassOf hi:Domain ;
     rdfs:label "public policy" ;
     skos:exactMatch <https://dbpedia.org/resource/Public_policy> .
 
-# Contexts
-hi:HighStakesDecisionContext a hi:Context, owl:NamedIndividual ;
+# Context subclasses
+hi:HighStakesDecisionContext a owl:Class ;
+    rdfs:subClassOf hi:Context ;
     rdfs:label "high-stakes decision context" .
 
-hi:PersonalizedLearningContext a hi:Context, owl:NamedIndividual ;
+hi:PersonalizedLearningContext a owl:Class ;
+    rdfs:subClassOf hi:Context ;
     rdfs:label "personalized learning context" .
 
-hi:ResearchWorkflowContext a hi:Context, owl:NamedIndividual ;
+hi:ResearchWorkflowContext a owl:Class ;
+    rdfs:subClassOf hi:Context ;
     rdfs:label "research workflow context" .
 
-hi:ImmersiveInteractionContext a hi:Context, owl:NamedIndividual ;
+hi:ImmersiveInteractionContext a owl:Class ;
+    rdfs:subClassOf hi:Context ;
     rdfs:label "immersive interaction context" .
 
-hi:PublicHealthPolicyContext a hi:Context, owl:NamedIndividual ;
+hi:PublicHealthPolicyContext a owl:Class ;
+    rdfs:subClassOf hi:Context ;
     rdfs:label "public health policy context" .
 
-# End goals
-hi:AccurateDiagnosis a hi:Endgoal, owl:NamedIndividual ;
+# Endgoal subclasses
+hi:AccurateDiagnosis a owl:Class ;
+    rdfs:subClassOf hi:Endgoal ;
     rdfs:label "accurate diagnosis" .
 
-hi:PersonalizedLearningImprovement a hi:Endgoal, owl:NamedIndividual ;
+hi:PersonalizedLearningImprovement a owl:Class ;
+    rdfs:subClassOf hi:Endgoal ;
     rdfs:label "personalized learning improvement" .
 
-hi:RobustResearchDiscovery a hi:Endgoal, owl:NamedIndividual ;
+hi:RobustResearchDiscovery a owl:Class ;
+    rdfs:subClassOf hi:Endgoal ;
     rdfs:label "robust research discovery" .
 
-# Ethical considerations
-hi:TrustEthic a hi:EthicalConsideration, owl:NamedIndividual ;
+# Ethical consideration subclasses
+hi:TrustEthic a owl:Class ;
+    rdfs:subClassOf hi:EthicalConsideration ;
     rdfs:label "trust" ;
     skos:closeMatch <https://dbpedia.org/resource/Trust_(social_sciences)> .
 
-hi:TransparencyEthic a hi:EthicalConsideration, owl:NamedIndividual ;
+hi:TransparencyEthic a owl:Class ;
+    rdfs:subClassOf hi:EthicalConsideration ;
     rdfs:label "transparency" ;
     skos:closeMatch <https://dbpedia.org/resource/Transparency_(behavior)> .
 
-hi:PrivacyProtection a hi:EthicalConsideration, owl:NamedIndividual ;
+hi:PrivacyProtection a owl:Class ;
+    rdfs:subClassOf hi:EthicalConsideration ;
     rdfs:label "privacy protection" ;
     skos:exactMatch <https://dbpedia.org/resource/Information_privacy> .
 
-hi:FairnessEthic a hi:EthicalConsideration, owl:NamedIndividual ;
+hi:FairnessEthic a owl:Class ;
+    rdfs:subClassOf hi:EthicalConsideration ;
     rdfs:label "fairness" .
 
-hi:SafetyEthic a hi:EthicalConsideration, owl:NamedIndividual ;
+hi:SafetyEthic a owl:Class ;
+    rdfs:subClassOf hi:EthicalConsideration ;
     rdfs:label "safety" .
 
-hi:HumanOversightEthic a hi:EthicalConsideration, owl:NamedIndividual ;
+hi:HumanOversightEthic a owl:Class ;
+    rdfs:subClassOf hi:EthicalConsideration ;
     rdfs:label "human oversight" .
 
 #################################################################
-# COMMON INFORMATION PROCESSING INDIVIDUALS
+# INFORMATION PROCESSING SUBCLASSES
 #################################################################
 
-hi:SimilaritySearchAndAnalysis a hi:InformationProcessing ;
-    hi:informationMethod hi:Hybrid ;
-    hi:processingTask hi:Reasoning , hi:Learning .
+hi:SimilaritySearchAndAnalysis a owl:Class ;
+    rdfs:subClassOf hi:InformationProcessing ;
+    rdfs:label "similarity search and analysis" .
 
-hi:AdaptiveLearningAnalytics a hi:InformationProcessing ;
-    hi:informationMethod hi:Hybrid ;
-    hi:processingTask hi:Learning , hi:Reasoning .
+hi:AdaptiveLearningAnalytics a owl:Class ;
+    rdfs:subClassOf hi:InformationProcessing ;
+    rdfs:label "adaptive learning analytics" .
 
-hi:LiteratureSynthesisPipeline a hi:InformationProcessing ;
-    hi:informationMethod hi:Neuro-symbolic ;
-    hi:processingTask hi:Reasoning , hi:Generating .
+hi:LiteratureSynthesisPipeline a owl:Class ;
+    rdfs:subClassOf hi:InformationProcessing ;
+    rdfs:label "literature synthesis pipeline" .
 
-hi:TrustAwareDecisionSupport a hi:InformationProcessing ;
-    hi:informationMethod hi:Statistical ;
-    hi:processingTask hi:Reasoning .
+hi:TrustAwareDecisionSupport a owl:Class ;
+    rdfs:subClassOf hi:InformationProcessing ;
+    rdfs:label "trust-aware decision support" .
 
 ####################################################################################################################!!!!!!!!!!!!
 #################################################################

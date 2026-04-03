@@ -1,6 +1,6 @@
 scenario,autonomyLevel,paperCount
-http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ChildEducationTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/DynamicAutonomy,3
-http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ChildEducationTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/HumanLedAutonomy,2
-http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/HealthcareDiagnosisTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/DynamicAutonomy,6
-http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/HealthcareDiagnosisTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/HumanLedAutonomy,3
-http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ResearchHITeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/DynamicAutonomy,2
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ChildEducationTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/dynamicAutonomyLevel,3
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ChildEducationTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/humanLedAutonomyLevel,2
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/HealthcareDiagnosisTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/dynamicAutonomyLevel,6
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/HealthcareDiagnosisTeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/humanLedAutonomyLevel,3
+http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/ResearchHITeam,http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/dynamicAutonomyLevel,2
